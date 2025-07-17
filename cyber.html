@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Ciberseguridad - José Andrés Acuña Rodríguez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/cyber.css">
+</head>
+<body>
+    <section class="hero-cyber d-flex flex-column align-items-center justify-content-center text-center">
+        <div class="cyber-avatar mb-3">
+            <i class="bi bi-shield-lock-fill"></i>
+        </div>
+        <h1 class="cyber-anim-title mb-2">Ciberseguridad Creativa</h1>
+        <p class="cyber-anim-subtitle">Ofensiva • Defensiva • Forense</p>
+        <p class="cyber-anim-claim mb-0">El conocimiento es poder.<br><span class="cyber-highlight">Protege, ataca, analiza.</span></p>
+        <div class="about-cyber mb-3">
+    <span>José Andrés Acuña Rodríguez | Ingeniero en Tecnologías de Información<br>
+    Ingeniero apasionado por la seguridad ofensiva y la investigación forense digital. Me motiva resolver retos complejos, compartir conocimiento y fortalecer la cultura de ciberseguridad.</span>
+</div>
+
+    </section>
+    
+
+    <main class="container cyber-main-landing">
+        
+        <!-- Skills animadas -->
+        <section class="cyber-section-landing">
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="skill-bubble offensive animate-pop">
+                        <i class="bi bi-bug-fill"></i>
+                        <h3>Ofensiva</h3>
+                        <p>Pentesting, Red Team, OSINT,<br> Kali Linux, Burp Suite.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="skill-bubble defensive animate-pop animate-delay-1">
+                        <i class="bi bi-shield-shaded"></i>
+                        <h3>Defensiva</h3>
+                        <p>SIEM, Blue Team, Hardening,<br> Monitoreo y respuesta a incidentes.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="skill-bubble forense animate-pop animate-delay-2">
+                        <i class="bi bi-search"></i>
+                        <h3>Forense</h3>
+                        <p>Análisis forense, malware, Volatility,<br> cadena de custodia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Proyectos destacados -->
+<section class="cyber-section mb-5">
+    <h2 class="cyber-section-title">Proyectos</h2>
+    <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass offensive">
+                <div class="project-icon"><i class="bi bi-terminal-dash"></i></div>
+                <h4>Escaneo de vulnerabilidades</h4>
+                <p class="project-short">Uso de herramientas como Nmap y Nessus para descubrir y reportar vulnerabilidades en una red local simulada.</p>
+               
+            </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass defensive">
+                <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+                <h4>Política de contraseñas seguras</h4>
+                <p class="project-short">Implementación y pruebas de políticas de contraseñas en Windows/Linux y simulación de ataques de fuerza bruta (John the Ripper).</p>
+              
+            </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass forense">
+                <div class="project-icon"><i class="bi bi-search"></i></div>
+                <h4>Análisis de logs</h4>
+                <p class="project-short">Recopilación y análisis de logs de sistema (Windows/Linux) para identificar accesos no autorizados y actividades sospechosas.</p>
+             
+            </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass offensive">
+                <div class="project-icon"><i class="bi bi-bug-fill"></i></div>
+                <h4>Phishing awareness</h4>
+                <p class="project-short">Creación de una campaña educativa sobre phishing, simulando correos y documentando cómo detectar intentos fraudulentos.</p>
+                
+            </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass defensive">
+                <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
+                <h4>Firewall personal</h4>
+                <p class="project-short">Configuración de un firewall básico con reglas personalizadas usando UFW (Linux) o el firewall de Windows.</p>
+                
+            </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="project-card-glass forense">
+                <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
+                <h4>Recuperación de archivos borrados</h4>
+                <p class="project-short">Uso de herramientas gratuitas como Recuva o Foremost para intentar recuperar archivos eliminados de un USB o disco virtual.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Certificaciones -->
+<section class="cyber-section text-center mb-4">
+    <h2 class="cyber-section-title center">Certificaciones</h2>
+    <div class="badges-cyber d-flex flex-wrap justify-content-center gap-3">
+        <div class="cert-badge-img">
+            <img src="/public/img/c1.png" alt="Ciberseguridad" class="cert-img" onclick="showCertModal(this)">
+            <span>Ciberseguridad</span>
+        </div>
+        <div class="cert-badge-img">
+            <img src="/public/img/c2.png" alt="KaliLinux101" class="cert-img" onclick="showCertModal(this)">
+            <span>KaliLinux101</span>
+        </div>
+        <div class="cert-badge-img">
+            <img src="/public/img/s1.png" alt="Introduccion a Redes" class="cert-img" onclick="showCertModal(this)">
+            <span>Introduccion a Redes</span>
+        </div>
+        <div class="cert-badge-img">
+            <img src="/public/img/s2.png" alt="CCNA:Switching,Routing,Wireless" class="cert-img" onclick="showCertModal(this)">
+            <span>CCNA:Switching,Routing,Wireless</span>
+        </div>
+        <div class="cert-badge-img">
+            <img src="/public/img/s3.png" alt="CCNA:RedesEmpresariales,Seguridad,Automatización" class="cert-img" onclick="showCertModal(this)">
+            <span>CCNA:RedesEmpresariales,Seguridad,Automatización</span>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para ampliar imagen -->
+<div id="certModal" class="cert-modal" onclick="hideCertModal()">
+    <span class="cert-modal-close">&times;</span>
+    <img class="cert-modal-content" id="certModalImg" alt="Certificación ampliada">
+    <div id="certModalCaption" class="cert-modal-caption"></div>
+</div>
+
+
+    </main>
+    <footer class="footer-cyber text-center py-4">
+        © 2025 José Andrés Acuña Rodríguez &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/joseacuna-cyberdev" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    </footer>
+</body> 
+</html>
+<script>
+function showCertModal(img) {
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("certModalImg");
+    const caption = document.getElementById("certModalCaption");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    caption.textContent = img.alt;
+    document.body.style.overflow = "hidden";
+}
+function hideCertModal() {
+    document.getElementById("certModal").style.display = "none";
+    document.body.style.overflow = "";
+}
+// Cierra con ESC también:
+document.addEventListener('keydown', function(event) {
+    if(event.key === "Escape") hideCertModal();
+});
+</script>
