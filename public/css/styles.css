@@ -7,7 +7,7 @@
   --primary-600: #4f46e5;
   --primary-700: #4338ca;
   --primary-900: #312e81;
-  
+  --botton-view:rgb(9, 168, 9);
   --success-500: #10b981;
   --success-600: #059669;
   
@@ -90,6 +90,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.btn-view{
+  background-color: var(--botton-view);
+  color: white;
 }
 
 html {
