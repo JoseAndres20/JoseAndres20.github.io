@@ -3,178 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Ciberseguridad - José Andrés Acuña Rodríguez</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>fairwellito | Ethical Hacker Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/cyber.css">
 </head>
 <body>
-    <section class="hero-cyber d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="cyber-avatar mb-3">
-            <i class="bi bi-shield-lock-fill"></i>
-        </div>
-        <h1 class="cyber-anim-title mb-2">Ciberseguridad Creativa</h1>
-        <p class="cyber-anim-subtitle">Ofensiva • Defensiva • Forense</p>
-        <p class="cyber-anim-claim mb-0">El conocimiento es poder.<br><span class="cyber-highlight">Protege, ataca, analiza.</span></p>
-        <div class="about-cyber mb-3">
-    <span>José Andrés Acuña Rodríguez | Ingeniero en Tecnologías de Información<br>
-    Ingeniero apasionado por la seguridad ofensiva y la investigación forense digital. Me motiva resolver retos complejos, compartir conocimiento y fortalecer la cultura de ciberseguridad.</span>
-</div>
-
-    </section>
+    <!-- Matrix Background -->
+    <div class="matrix-bg" id="matrixBg"></div>
     
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+    
+    <div class="content-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">fairwellito</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/index.html">Portafolios</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certificaciones</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#shell">Terminal</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </nav>
 
-    <main class="container cyber-main-landing">
-        
-        <!-- Skills animadas -->
-        <section class="cyber-section-landing">
-            
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-md-4">
-                    <div class="skill-bubble offensive animate-pop">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot dot-red"></span>
+                    <span class="terminal-dot dot-yellow"></span>
+                    <span class="terminal-dot dot-green"></span>
+                </div>
+                <div class="glitch-avatar">
+                    <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <p class="typing-text"></p>
+                <h1>José Andrés Acuna Rodríguez </h1>
+                <p class="alias">[ fairwellito ]</p>
+                <p class="subtitle">Ethical Hacker • Pentester • Digital Forensics</p>
+                <div class="command-line">
+                    <span>whoami:</span> Especialista en Seguridad Ofensiva<br>
+                    <span>mission:</span> Proteger sistemas identificando vulnerabilidades antes que los atacantes<br>
+                    <span>status:</span> <span style="color: #00ff41;">● ONLINE</span><br>
+                    <span>motto:</span> "La mejor defensa es un buen ataque controlado"
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <h2 class="section-title">&lt; HABILIDADES /&gt;</h2>
+            <p class="section-subtitle">// Mis áreas de expertise</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-content">
                         <i class="bi bi-bug-fill"></i>
-                        <h3>Ofensiva</h3>
-                        <p>Pentesting, Red Team, OSINT,<br> Kali Linux, Burp Suite.</p>
+                        <h3>Pentesting</h3>
+                        <p>Evaluación de vulnerabilidades en aplicaciones web, redes y sistemas. Experiencia en metodologías OWASP y herramientas como Burp Suite y Metasploit.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="skill-bubble defensive animate-pop animate-delay-1">
+                <div class="skill-card">
+                    <div class="skill-content">
                         <i class="bi bi-shield-shaded"></i>
-                        <h3>Defensiva</h3>
-                        <p>SIEM, Blue Team, Hardening,<br> Monitoreo y respuesta a incidentes.</p>
+                        <h3>Seguridad Ofensiva</h3>
+                        <p>Análisis proactivo de seguridad mediante técnicas de red teaming, explotación de vulnerabilidades y pruebas de penetración avanzadas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="skill-bubble forense animate-pop animate-delay-2">
+                <div class="skill-card">
+                    <div class="skill-content">
                         <i class="bi bi-search"></i>
-                        <h3>Forense</h3>
-                        <p>Análisis forense, malware, Volatility,<br> cadena de custodia.</p>
+                        <h3>Forensics Digital</h3>
+                        <p>Investigación de incidentes de seguridad, análisis forense de sistemas comprometidos y recuperación de evidencia digital.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Desarrollo Seguro</h3>
+                        <p>Implementación de prácticas de codificación segura, revisión de código y auditoría de aplicaciones para prevenir vulnerabilidades.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-       <!-- Proyectos destacados -->
-<section class="cyber-section mb-5">
-    <h2 class="cyber-section-title">Proyectos</h2>
-    <div class="row g-4">
-        <!-- Proyecto 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass offensive">
-                <div class="project-icon"><i class="bi bi-terminal-dash"></i></div>
-                <h4>Escaneo de vulnerabilidades</h4>
-                <p class="project-short">Uso de herramientas como Nmap y Nessus para descubrir y reportar vulnerabilidades en una red local simulada.</p>
-               
+        <!-- Certificaciones Carousel -->
+        <section class="cert-section" id="certifications">
+            <h2 class="section-title">&lt; CERTIFICACIONES /&gt;</h2>
+            <p class="section-subtitle">// Mis credenciales verificadas</p>
+            <div class="carousel-container">
+                <div class="carousel-track ">
+                    <!-- Duplica las certificaciones para el efecto continuo -->
+                    <div class="cert-card" onclick="showModal('/public/img/c1.png')">
+                        <img src="/public/img/c1.png" alt="OSCP">
+                        <span>OSCP</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/c2.png')">
+                        <img src="/public/img/c2.png" alt="CEH">
+                        <span>Kali Linux 101</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s1.png')">
+                        <img src="/public/img/s1.png" alt="CCNAv7 Introduccion a Redes">
+                        <span>CCNAv7 Introduccion a Redes</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s2.png')">
+                        <img src="/public/img/s2.png" alt="CCNAv7 Switching, Routing, Wireless">
+                        <span>CCNAv7 Switching, Routing, Wireless</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s3.png')">
+                        <img src="/public/img/s3.png" alt="CCNAv7 Security">
+                        <span>CCNA Redes Empresariales,Seguridad,Automatizacion</span>
+                        
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s4.png')">
+                        <img src="/public/img/s4.png" alt="CEH">
+                        <span>Introducion Ciberseguridad,
+                            Tools,CyberAttacks</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s5.png')">
+                        <img src="/public/img/s5.png" alt="CEH">
+                        <span>Hands-On Web App Pentesting</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/s6.png')">
+                        <img src="/public/img/s6.png" alt="CEH">
+                        <span>Introducción a la Ciberseguridad</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/fondo.webp')">
+                        <img src="/public/img/fondo.webp" alt="Proximo">
+                        <span>Proximo</span>
+                    </div>
+                    <div class="cert-card" onclick="showModal('/public/img/fondo.webp')">
+                        <img src="/public/img/fondo.webp" alt="Proximo">
+                        <span>Proximo</span>
+                    </div> 
+                </div>
             </div>
-        </div>
-        <!-- Proyecto 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass defensive">
-                <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
-                <h4>Política de contraseñas seguras</h4>
-                <p class="project-short">Implementación y pruebas de políticas de contraseñas en Windows/Linux y simulación de ataques de fuerza bruta (John the Ripper).</p>
-              
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <h2 class="section-title">&lt; PROYECTOS /&gt;</h2>
+            <p class="section-subtitle">// Mis trabajos y experimentos</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-terminal-dash"></i></div>
+                    <h4>Vulnerability Scanner</h4>
+                    <p>Desarrollo de un escáner de vulnerabilidades personalizado que identifica debilidades en aplicaciones web utilizando técnicas avanzadas de fuzzing.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+                    <h4>Red Team Framework</h4>
+                    <p>Framework modular para operaciones de red teaming que automatiza la recolección de información y explotación de vulnerabilidades.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-search"></i></div>
+                    <h4>Forensic Toolkit</h4>
+                    <p>Conjunto de herramientas para análisis forense digital que facilita la extracción y análisis de evidencia en sistemas comprometidos.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-bug-fill"></i></div>
+                    <h4>Exploit Development</h4>
+                    <p>Investigación y desarrollo de exploits para vulnerabilidades de día cero en sistemas operativos y aplicaciones empresariales.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
+                    <h4>Network Security Assessment</h4>
+                    <p>Evaluación integral de seguridad en infraestructura de red para una empresa Fortune 500, identificando múltiples vectores de ataque.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
+                    <h4>Secure Code Review</h4>
+                    <p>Auditoría de código fuente para aplicación financiera, detectando y remediando vulnerabilidades críticas antes del despliegue.</p>
+                </div>
             </div>
-        </div>
-        <!-- Proyecto 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass forense">
-                <div class="project-icon"><i class="bi bi-search"></i></div>
-                <h4>Análisis de logs</h4>
-                <p class="project-short">Recopilación y análisis de logs de sistema (Windows/Linux) para identificar accesos no autorizados y actividades sospechosas.</p>
-             
+        </section>
+
+        <!-- Interactive Shell Section -->
+        <section class="shell-section" id="shell">
+            <h2 class="section-title">&lt; TERMINAL INTERACTIVA /&gt;</h2>
+            <p class="section-subtitle">// Ejecuta comandos para explorar</p>
+            <div class="shell-container">
+                <div class="shell-header">
+                    <span class="terminal-dot dot-red"></span>
+                    <span class="terminal-dot dot-yellow"></span>
+                    <span class="terminal-dot dot-green"></span>
+                </div>
+                <div class="shell-output" id="shellOutput">
+                    <p>Bienvenido a la terminal interactiva de fairwellito.</p>
+                    <p>Escribe <span style="color: var(--hacker-green)">'help'</span> para ver los comandos disponibles.</p>
+                    <p>root@fairwellito:~$ <span id="initialCommand"></span></p>
+                </div>
+                <div class="shell-input-line">
+                    <span class="shell-prompt">root@fairwellito:~$</span>
+                    <input type="text" class="shell-input" id="shellInput" placeholder="Escribe un comando..." autocomplete="off">
+                </div>
+                <div class="command-help">
+                    Comandos disponibles: <span style="color: var(--hacker-green)">whoami</span>, 
+                    <span style="color: var(--hacker-green)">ls</span>, 
+                    <span style="color: var(--hacker-green)">ls -l</span>, 
+                    <span style="color: var(--hacker-green)">help</span>, 
+                    <span style="color: var(--hacker-green)">clear</span>
+                </div>
             </div>
-        </div>
-        <!-- Proyecto 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass offensive">
-                <div class="project-icon"><i class="bi bi-bug-fill"></i></div>
-                <h4>Phishing awareness</h4>
-                <p class="project-short">Creación de una campaña educativa sobre phishing, simulando correos y documentando cómo detectar intentos fraudulentos.</p>
-                
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>fairwellito</h3>
+                    <p>Amante de  la tecnologia y la seguirdad</p>
+                    <p style="color: var(--hacker-green); margin-top: 1rem;">
+                        <i class="bi bi-terminal"></i> Seguridad no es un producto, es un proceso continuo.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#certifications">Certificaciones</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#shell">Terminal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="bi bi-envelope"></i> contacto@fairwellito.dev</p>
+                    <p><i class="bi bi-geo-alt"></i> Ciudad, País</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/joseacuna-cyberdev" target="_blank" rel="noopener" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JoseAndres20" target="_blank" rel="noopener" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:joseandresacunarodriguez087@gmail.com" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Proyecto 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass defensive">
-                <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
-                <h4>Firewall personal</h4>
-                <p class="project-short">Configuración de un firewall básico con reglas personalizadas usando UFW (Linux) o el firewall de Windows.</p>
-                
+            <div class="footer-bottom">
+                <p>© 2025 José Andrés Acuna Rodríguez | <span>fairwellito</span></p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--hacker-blue);">
+                    Built with passion for security • Powered by ethical hacking
+                </p>
             </div>
-        </div>
-        <!-- Proyecto 6 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="project-card-glass forense">
-                <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
-                <h4>Recuperación de archivos borrados</h4>
-                <p class="project-short">Uso de herramientas gratuitas como Recuva o Foremost para intentar recuperar archivos eliminados de un USB o disco virtual.</p>
-                
-            </div>
+        </footer>
+
+        <!-- Scroll to top button -->
+        <div class="scroll-top" id="scrollTop">
+            <i class="bi bi-arrow-up"></i>
         </div>
     </div>
-</section>
 
-
-<!-- Certificaciones -->
-<section class="cyber-section text-center mb-4">
-    <h2 class="cyber-section-title center">Certificaciones</h2>
-    <div class="badges-cyber d-flex flex-wrap justify-content-center gap-3">
-        <div class="cert-badge-img">
-            <img src="/public/img/c1.png" alt="Ciberseguridad" class="cert-img" onclick="showCertModal(this)">
-            <span>Ciberseguridad</span>
-        </div>
-        <div class="cert-badge-img">
-            <img src="/public/img/c2.png" alt="KaliLinux101" class="cert-img" onclick="showCertModal(this)">
-            <span>KaliLinux101</span>
-        </div>
-        <div class="cert-badge-img">
-            <img src="/public/img/s1.png" alt="Introduccion a Redes" class="cert-img" onclick="showCertModal(this)">
-            <span>Introduccion a Redes</span>
-        </div>
-        <div class="cert-badge-img">
-            <img src="/public/img/s2.png" alt="CCNA:Switching,Routing,Wireless" class="cert-img" onclick="showCertModal(this)">
-            <span>CCNA:Switching,Routing,Wireless</span>
-        </div>
-        <div class="cert-badge-img">
-            <img src="/public/img/s3.png" alt="CCNA:RedesEmpresariales,Seguridad,Automatización" class="cert-img" onclick="showCertModal(this)">
-            <span>CCNA:RedesEmpresariales,Seguridad,Automatización</span>
-        </div>
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="hideModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Certificación">
     </div>
-</section>
-
-<!-- Modal para ampliar imagen -->
-<div id="certModal" class="cert-modal" onclick="hideCertModal()">
-    <span class="cert-modal-close">&times;</span>
-    <img class="cert-modal-content" id="certModalImg" alt="Certificación ampliada">
-    <div id="certModalCaption" class="cert-modal-caption"></div>
-</div>
-
-
-    </main>
-    <footer class="footer-cyber text-center py-4">
-        © 2025 José Andrés Acuña Rodríguez &nbsp;|&nbsp;
-        <a href="https://www.linkedin.com/in/joseacuna-cyberdev" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
-    </footer>
-</body> 
+    <script src="/public/js/cyber.js"></script>
+</body>
 </html>
-<script>
-function showCertModal(img) {
-    const modal = document.getElementById("certModal");
-    const modalImg = document.getElementById("certModalImg");
-    const caption = document.getElementById("certModalCaption");
-    modal.style.display = "flex";
-    modalImg.src = img.src;
-    modalImg.alt = img.alt;
-    caption.textContent = img.alt;
-    document.body.style.overflow = "hidden";
-}
-function hideCertModal() {
-    document.getElementById("certModal").style.display = "none";
-    document.body.style.overflow = "";
-}
-// Cierra con ESC también:
-document.addEventListener('keydown', function(event) {
-    if(event.key === "Escape") hideCertModal();
-});
-</script>
