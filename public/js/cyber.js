@@ -33,7 +33,7 @@
                     
                     // Add command to output
                     const commandLine = document.createElement('p');
-                    commandLine.innerHTML = `root@cybershadow:~$ <span style="color: var(--hacker-green)">${command}</span>`;
+                    commandLine.innerHTML = `root@fairwellito:~$ <span style="color: var(--hacker-green)">${command}</span>`;
                     shellOutput.appendChild(commandLine);
                     
                     // Process command
@@ -59,7 +59,6 @@
                         <p style="color: var(--hacker-green)">proyectos/</p>
                         <p style="color: var(--hacker-green)">certificaciones/</p>
                         <p style="color: var(--hacker-green)">habilidades/</p>
-                        <p style="color: var(--hacker-green)">contacto.txt</p>
                     `;
                     break;
                     
