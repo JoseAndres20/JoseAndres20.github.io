@@ -1,12 +1,12 @@
 /* ===== CSS VARIABLES ===== */
 :root {
   /* Colors */
-  --primary-50: #f0f4ff;
+  --primary-50: #1f51d9;
   --primary-100: #e0e7ff;
-  --primary-500: #6366f1;
-  --primary-600: #4f46e5;
-  --primary-700: #4338ca;
-  --primary-900: #312e81;
+  --primary-500: #ffffff;
+  --primary-600: #c2c2c2;
+  --primary-700: #fafafa;
+  --primary-900: #ffffff;
   --botton-view:rgb(9, 168, 9);
   --success-500: #10b981;
   --success-600: #059669;
@@ -32,8 +32,8 @@
   --text-muted: #64748b;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(100, 61, 136, 0.95), rgba(56, 56, 122, 0.95));
+  --gradient-primary: linear-gradient(135deg, #1e21c2 0%, #1674cd 50%, #310bba 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(28, 28, 247, 0.95));
   
   /* Effects */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
@@ -41,7 +41,7 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-  --glow-primary: 0 0 20px rgba(99, 102, 241, 0.3);
+  --glow-primary: 0 0 20px rgba(15, 18, 191, 0.3);
   --glow-purple: 0 0 30px rgba(139, 92, 246, 0.4);
   
   /* Typography */
@@ -873,17 +873,10 @@ body::before {
   }
 }
 .hero-img {
-  border-radius: 20px;       /* esquinas redondeadas */
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 
   /* 🔥 Forzar imagen limpia */
   filter: none !important;   
-  opacity: 1 !important;     
-  mix-blend-mode: normal !important;
-  background: transparent !important;
+
   box-shadow: none !important;
 }
   /* Imagen hero: limpia, sin filtros forzados */
@@ -904,9 +897,34 @@ body::before {
 .navbar{ transition: transform .35s ease, background .3s ease; }
 
 /* Asegura contraste en tags */
-.tech-tag{ color:#e6eefb; }
+
 
 /* Corrige grid en móviles muy pequeños */
 @media (max-width:480px){
   .projects-grid{ grid-template-columns: 1fr; }
+}
+/* ===== FIX: Evitar que el fondo oscuro del HERO afecte la imagen ===== */
+
+/* Hacemos que la imagen esté SIEMPRE por encima del overlay */
+.hero-img {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Ajustamos la capa oscura del fondo para que NO cubra la imagen */
+.hero::before {
+  opacity: 0.45 !important; /* menos oscuro, no tapa la foto */
+  pointer-events: none;
+}
+
+/* Evitamos que el gradiente global mezcle con la foto */
+.hero img {
+  mix-blend-mode: normal !important;
+  filter: brightness(4) contrast(8); /* Se ve más clara */
+}
+
+/* Extra: hacemos un círculo suave y bonito */
+.hero-img {
+  border-radius: 50% !important;
+
 }

@@ -1,275 +1,563 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fairwellito | Ethical Hacker Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/cyber.css">
-</head>
-<body>
-    <!-- Matrix Background -->
-    <div class="matrix-bg" id="matrixBg"></div>
-    
-    <!-- Confetti Container -->
-    <div class="confetti-container" id="confettiContainer"></div>
-    
-    <div class="content-wrapper">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#home" class="nav-logo">fairwellito</a>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="/index.html">Portafolios</a></li>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certifications">Certificaciones</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#shell">Terminal</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-                <div class="nav-toggle" id="navToggle">
-                    <i class="bi bi-list"></i>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <span class="terminal-dot dot-red"></span>
-                    <span class="terminal-dot dot-yellow"></span>
-                    <span class="terminal-dot dot-green"></span>
-                </div>
-                <div class="glitch-avatar">
-                    <i class="bi bi-shield-lock-fill"></i>
-                </div>
-                <p class="typing-text"></p>
-                <h1>José Andrés Acuna Rodríguez </h1>
-                <p class="alias">[ fairwellito ]</p>
-                <p class="subtitle">Ethical Hacker • Pentester • Digital Forensics</p>
-                <div class="command-line">
-                    <span>whoami:</span> Especialista en Seguridad Ofensiva<br>
-                    <span>mission:</span> Proteger sistemas identificando vulnerabilidades antes que los atacantes<br>
-                    <span>status:</span> <span style="color: #00ff41;">● ONLINE</span><br>
-                    <span>motto:</span> "La mejor defensa es un buen ataque controlado"
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <h2 class="section-title">&lt; HABILIDADES /&gt;</h2>
-            <p class="section-subtitle">// Mis áreas de expertise</p>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-content">
-                        <i class="bi bi-bug-fill"></i>
-                        <h3>Pentesting</h3>
-                        <p>Evaluación de vulnerabilidades en aplicaciones web, redes y sistemas. Experiencia en metodologías OWASP y herramientas como Burp Suite y Metasploit.</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-content">
-                        <i class="bi bi-shield-shaded"></i>
-                        <h3>Seguridad Ofensiva</h3>
-                        <p>Análisis proactivo de seguridad mediante técnicas de red teaming, explotación de vulnerabilidades y pruebas de penetración avanzadas.</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-content">
-                        <i class="bi bi-search"></i>
-                        <h3>Forensics Digital</h3>
-                        <p>Investigación de incidentes de seguridad, análisis forense de sistemas comprometidos y recuperación de evidencia digital.</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-content">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>Desarrollo Seguro</h3>
-                        <p>Implementación de prácticas de codificación segura, revisión de código y auditoría de aplicaciones para prevenir vulnerabilidades.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certificaciones Carousel -->
-        <section class="cert-section" id="certifications">
-            <h2 class="section-title">&lt; CERTIFICACIONES /&gt;</h2>
-            <p class="section-subtitle">// Mis credenciales verificadas</p>
-            <div class="carousel-container">
-                <div class="carousel-track ">
-                    <!-- Duplica las certificaciones para el efecto continuo -->
-                    <div class="cert-card" onclick="showModal('/public/img/c1.png')">
-                        <img src="/public/img/c1.png" alt="OSCP">
-                        <span>OSCP</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/c2.png')">
-                        <img src="/public/img/c2.png" alt="Kali Linux 101">
-                        <span>Kali Linux 101</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s1.png')">
-                        <img src="/public/img/s1.png" alt="CCNAv7 Introduccion a Redes">
-                        <span>CCNAv7 Introduccion a Redes</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s2.png')">
-                        <img src="/public/img/s2.png" alt="CCNAv7 Switching, Routing, Wireless">
-                        <span>CCNAv7 Switching, Routing, Wireless</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s3.png')">
-                        <img src="/public/img/s3.png" alt="CCNAv7 Security">
-                        <span>CCNA Redes Empresariales,Seguridad,Automatizacion</span>
-                        
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s4.png')">
-                        <img src="/public/img/s4.png" alt="CEH">
-                        <span>Introducion Ciberseguridad,
-                            Tools,CyberAttacks</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s5.png')">
-                        <img src="/public/img/s5.png" alt="CEH">
-                        <span>Hands-On Web App Pentesting</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/s6.png')">
-                        <img src="/public/img/s6.png" alt="CEH">
-                        <span>Introducción a la Ciberseguridad</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/fondo.webp')">
-                        <img src="/public/img/fondo.webp" alt="Proximo">
-                        <span>Proximo</span>
-                    </div>
-                    <div class="cert-card" onclick="showModal('/public/img/fondo.webp')">
-                        <img src="/public/img/fondo.webp" alt="Proximo">
-                        <span>Proximo</span>
-                    </div> 
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-            <h2 class="section-title">&lt; PROYECTOS /&gt;</h2>
-            <p class="section-subtitle">// Mis trabajos y experimentos</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-terminal-dash"></i></div>
-                    <h4>Vulnerability Scanner</h4>
-                    <p>Desarrollo de un escáner de vulnerabilidades personalizado que identifica debilidades en aplicaciones web utilizando técnicas avanzadas de fuzzing.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
-                    <h4>Red Team Framework</h4>
-                    <p>Framework modular para operaciones de red teaming que automatiza la recolección de información y explotación de vulnerabilidades.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-search"></i></div>
-                    <h4>Forensic Toolkit</h4>
-                    <p>Conjunto de herramientas para análisis forense digital que facilita la extracción y análisis de evidencia en sistemas comprometidos.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-bug-fill"></i></div>
-                    <h4>Exploit Development</h4>
-                    <p>Investigación y desarrollo de exploits para vulnerabilidades de día cero en sistemas operativos y aplicaciones empresariales.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
-                    <h4>Network Security Assessment</h4>
-                    <p>Evaluación integral de seguridad en infraestructura de red para una empresa Fortune 500, identificando múltiples vectores de ataque.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
-                    <h4>Secure Code Review</h4>
-                    <p>Auditoría de código fuente para aplicación financiera, detectando y remediando vulnerabilidades críticas antes del despliegue.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Shell Section -->
-        <section class="shell-section" id="shell">
-            <h2 class="section-title">&lt; TERMINAL INTERACTIVA /&gt;</h2>
-            <p class="section-subtitle">// Ejecuta comandos para explorar</p>
-            <div class="shell-container">
-                <div class="shell-header">
-                    <span class="terminal-dot dot-red"></span>
-                    <span class="terminal-dot dot-yellow"></span>
-                    <span class="terminal-dot dot-green"></span>
-                </div>
-                <div class="shell-output" id="shellOutput">
-                    <p>Bienvenido a la terminal interactiva de fairwellito.</p>
-                    <p>Escribe <span style="color: var(--hacker-green)">'help'</span> para ver los comandos disponibles.</p>
-                    <p>root@fairwellito:~$ <span id="initialCommand"></span></p>
-                </div>
-                <div class="shell-input-line">
-                    <span class="shell-prompt">root@fairwellito:~$</span>
-                    <input type="text" class="shell-input" id="shellInput" placeholder="Escribe un comando..." autocomplete="off">
-                </div>
-                <div class="command-help">
-                    Comandos disponibles: <span style="color: var(--hacker-green)">whoami</span>, 
-                    <span style="color: var(--hacker-green)">ls</span>, 
-                    <span style="color: var(--hacker-green)">ls -l</span>, 
-                    <span style="color: var(--hacker-green)">help</span>, 
-                    <span style="color: var(--hacker-green)">clear</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="contact">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>fairwellito</h3>
-                    <p>Amante de  la tecnologia y la seguirdad</p>
-                    <p style="color: var(--hacker-green); margin-top: 1rem;">
-                        <i class="bi bi-terminal"></i> Seguridad no es un producto, es un proceso continuo.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Navegación</h3>
-                    <ul>
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#certifications">Certificaciones</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#shell">Terminal</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p><i class="bi bi-envelope"></i> contacto@fairwellito.dev</p>
-                    <p><i class="bi bi-geo-alt"></i> Ciudad, País</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/joseacuna-cyberdev" target="_blank" rel="noopener" title="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/JoseAndres20" target="_blank" rel="noopener" title="GitHub">
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a href="mailto:joseandresacunarodriguez087@gmail.com" title="Email">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 José Andrés Acuna Rodríguez | <span>fairwellito</span></p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--hacker-blue);">
-                    Built with passion for security • Powered by ethical hacking
-                </p>
-            </div>
-        </footer>
-
-        <!-- Scroll to top button -->
-        <div class="scroll-top" id="scrollTop">
-            <i class="bi bi-arrow-up"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Cyber</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/cyber.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#inicio">
+            Fairwell<span>ito</span>
+          </a>
+          <button
+            class="navbar-toggler text-dark border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificaciones">Certificaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#herramientas">Herramientas</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section id="sobre-mi" class="hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-in" data-animate="slide-right">
+              <p class="section-title mb-3">Perfil</p>
+              <h1 class="display-5 fw-bold hero-title">
+                <span class="typing">José Andrés Acuña Rodríguez</span>
+              </h1>
+              <p class="lead text-secondary">
+                Diseño defensas digitales, simulo ataques controlados y traduzco hallazgos técnicos en
+                planes accionables. Combino metodologías MITRE ATT&CK, OWASP y Zero Trust para
+                construir sistemas resilientes.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <div>
+                  <small class="text-uppercase text-muted">Experiencia</small>
+                  <h5 class="mb-0 text-dark">5+ años</h5>
+                </div>
+                <div>
+                  <small class="text-uppercase text-muted">Ubicación</small>
+                  <h5 class="mb-0 text-dark">Bogotá · Remoto</h5>
+                </div>
+              </div>
+              <div class="mt-4 d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">Pentesting</span>
+                <span class="badge badge-tech">Hardening</span>
+                <span class="badge badge-tech">Análisis Forense</span>
+              </div>
+            </div>
+            <div class="col-lg-6 fade-in" data-animate="zoom">
+              <div class="photo-wrapper" data-parallax="18">
+                <img
+                  src="public/img/me.png"
+                  alt="Retrato profesional de José Andrés"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="py-5 position-relative">
+        <div class="glow"></div>
+        <div class="container position-relative">
+          <div class="section-card fade-in" data-animate="rise">
+            <p class="section-title mb-3">Habilidades Clave</p>
+            <h2 class="fw-semibold text-dark mb-4">Cobertura integral del ciclo de seguridad</h2>
+            <div class="skills-grid">
+              <div class="skill-box">
+                <h6 class="text-dark mb-1">Red Teaming</h6>
+                <p class="text-muted small mb-2">Emulación de amenazas persistentes</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-progress="92"></div>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h6 class="text-dark mb-1">DevSecOps</h6>
+                <p class="text-muted small mb-2">Pipelines seguros y shift-left</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-progress="88"></div>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h6 class="text-dark mb-1">Respuesta a Incidentes</h6>
+                <p class="text-muted small mb-2">Contención, erradicación y reporting</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-box">
+                <h6 class="text-dark mb-1">Arquitectura Zero Trust</h6>
+                <p class="text-muted small mb-2">Segmentación dinámica de acceso</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="py-5">
+        <div class="container">
+          <div class="section-heading text-center fade-in" data-animate="rise">
+            <p class="section-title mb-2">Proyectos</p>
+            <h2 class="fw-bold text-dark">Operaciones y herramientas de ciberseguridad</h2>
+            <p class="text-muted">
+              Cada entrega incluye documentación, tablero MITRE, scripts reproducibles y recomendaciones
+              finales.
+            </p>
+          </div>
+          <div class="row g-4">
+            <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+             <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+               <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+               <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+               <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+               <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+                <img
+                  src="/public/img/medivault.png"
+                  alt="Panel médico con indicadores de seguridad"
+                  class="img-fluid"
+                />
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                  <p class="text-muted small flex-grow-1">
+                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
+                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
+                    pentesting y monitoreo sobre un escenario realista.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-badge tech-go">Node.js</span>
+                    <span class="tech-badge tech-terraform">Express</span>
+                    <span class="tech-badge tech-cobalt">Docker</span>
+                    <span class="tech-badge tech-ansible">MariaDB</span>
+                    <span class="tech-badge tech-elastic">Bootstrap</span>
+                    <span class="tech-badge tech-zero">HTML</span>
+                    <span class="tech-badge tech-cis">CSS</span>
+                  </div>
+                  <a
+                    class="btn btn-outline-success rounded-pill"
+                    href="https://github.com/JoseAndres20/MediVault"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </article>
+
+      <section id="certificaciones" class="py-5">
+        <div class="container">
+          <div class="section-card fade-in" data-animate="rise">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4 mb-4">
+              <div>
+                <p class="section-title mb-2">Certificaciones</p>
+                <h3 class="text-dark mb-2">Garantía y respaldo internacional</h3>
+                <p class="text-muted mb-0">
+                  Colección de certificaciones que respaldan las prácticas ofensivas, defensivas y de cumplimiento
+                  que aplico en cada proyecto.
+                </p>
+              </div>
+            </div>
+            <div class="cert-grid">
+              <article class="cert-card" data-animate="zoom">
+                <img
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                  alt="Certificado OSCP"
+                  loading="lazy"
+                />
+                <h6>OSCP · Offensive Security</h6>
+                <p>Pentesting avanzado, pivoting y explotación manual.</p>
+                <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#certOs">
+                  Ver certificado
+                </button>
+              </article>
+              <article class="cert-card" data-animate="zoom">
+                <img
+                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=600&q=80"
+                  alt="Certificado AWS Security"
+                  loading="lazy"
+                />
+                <h6>AWS Security Specialty</h6>
+                <p>Arquitecturas Zero Trust y respuesta a incidentes en la nube.</p>
+                <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#certAws">
+                  Ver certificado
+                </button>
+              </article>
+              <article class="cert-card" data-animate="zoom">
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
+                  alt="Certificado CISM"
+                  loading="lazy"
+                />
+                <h6>CISM · ISACA</h6>
+                <p>Gobierno de seguridad, métricas ejecutivas y riesgo.</p>
+                <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#certCism">
+                  Ver certificado
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="herramientas" class="py-5">
+        <div class="container">
+          <div class="section-card fade-in" data-animate="rise">
+            <p class="section-title mb-3">Herramientas</p>
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4">
+              <div>
+                <h3 class="text-dark mb-3">Stack táctico y de automatización</h3>
+                <p class="text-muted mb-0">
+                  Combino distros ofensivas, orquestadores y plataformas de observabilidad para cubrir desde
+                  la fase de reconocimiento hasta la respuesta automatizada.
+                </p>
+              </div>
+            </div>
+            <div class="tools-grid mt-4">
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
+                  alt="Logo de Kali Linux"
+                  loading="lazy"
+                />
+                <h6>Kali Linux</h6>
+                <p>Auditorías ofensivas, exploit dev y OSINT guiado.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/tools/python.svg" alt="Logo de Python" loading="lazy" />
+                <h6>Python</h6>
+                <p>Automatizo recon y exploits para reportes reproducibles.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/tools/nmap.png" alt="Logo de Nmap" loading="lazy" />
+                <h6>Nmap</h6>
+                <p>Mapeo de red, detección de servicios y scripts NSE.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/gobuster.png" alt="Logo de Gobuster" loading="lazy" />
+                <h6>Gobuster</h6>
+                <p>Fuerza bruta para descubrimiento de rutas, DNS y S3.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/hydra.png" alt="Logo de Hydra" loading="lazy" />
+                <h6>Hydra</h6>
+                <p>Pruebas de credenciales en protocolos remotos críticos.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/wfuzz.png" alt="Logo de Wfuzz" loading="lazy" />
+                <h6>Wfuzz</h6>
+                <p>Fuzzing de parámetros y enumeración avanzada de APIs.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/nikto.png" alt="Logo de Nikto" loading="lazy" />
+                <h6>Nikto</h6>
+                <p>Escaneo rápido de configuraciones inseguras en servidores.</p>
+              </article>
+              <article class="tool-card" data-animate="rise" data-tilt="4">
+                <img src="public/img/tools/bash.svg" alt="Logo de Bash" loading="lazy" />
+                <h6>Automatización Bash</h6>
+                <p>Scripts para payloads, parsing de IOC y pivoteos.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0 text-muted">© 2025 José Andrés</p>
+        <div class="footer-links d-flex gap-2">
+          <a
+            href="https://github.com/JoseAndres20"
+            target="_blank"
+            rel="noreferrer"
+            class="btn-icon github"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-1.8c-3.4.7-4.1-1.6-4.1-1.6-.6-1.5-1.3-1.9-1.3-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.3 0-1.4.5-2.5 1.2-3.4-.2-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.3 2.9.1 3.2.8.9 1.2 2 1.2 3.4 0 5-2.9 6-5.6 6.3.4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/"
+            target="_blank"
+            rel="noreferrer"
+            class="btn-icon linkedin"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.4 20.4h-3.5V14c0-1.5-.5-2.5-1.8-2.5-.9 0-1.4.6-1.6 1.2-.1.2-.1.6-.1.9v6.8h-3.5s.1-11 0-12.1h3.5v1.7c.5-.8 1.4-1.9 3.3-1.9 2.4 0 4.2 1.5 4.2 4.7v7.6ZM5.3 6.7c-1.2 0-2-.8-2-1.8 0-.9.8-1.8 2-1.8s2 .8 2 1.8-.8 1.8-2 1.8Zm-1.8 13.7h3.6V8.2H3.5v12.2Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/js/cyber.js"></script>
+
+    <div class="modal fade" id="certOs" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">OSCP · Offensive Security</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Certificado OSCP completo"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Modal -->
-    <div id="modal" class="modal" onclick="hideModal()">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImg" alt="Certificación">
+    <div class="modal fade" id="certAws" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">AWS Security Specialty</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80"
+              alt="Certificado AWS Security"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="/public/js/cyber.js"></script>
-</body>
+
+    <div class="modal fade" id="certCism" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">CISM · ISACA</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=1200&q=80"
+              alt="Certificado CISM"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
