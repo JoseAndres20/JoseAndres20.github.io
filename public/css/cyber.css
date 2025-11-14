@@ -512,7 +512,8 @@ footer .text-muted {
 
   .skills-grid,
   .cert-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
   }
 
   .hero-title .typing {
@@ -539,7 +540,7 @@ footer .text-muted {
 
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
