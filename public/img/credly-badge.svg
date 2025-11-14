@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220">
+  <defs>
+    <linearGradient id="credlyGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8c32" />
+      <stop offset="100%" stop-color="#ff4d05" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#ff4d05" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect x="15" y="15" width="330" height="190" rx="24" fill="#0d1117" stroke="#ff8c32" stroke-width="3" />
+  <rect x="30" y="30" width="300" height="160" rx="18" fill="url(#credlyGradient)" filter="url(#shadow)" />
+  <text x="180" y="105" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="56" font-weight="700" fill="#fff" text-anchor="middle">
+    Credly
+  </text>
+  <text x="180" y="150" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="20" fill="#fff" text-anchor="middle" opacity="0.85">
+    Badges verificados
+  </text>
+</svg>
