@@ -26,8 +26,8 @@
 <body>
   <!-- Navigation -->
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container-fluid px-3 px-md-4">
       <!-- Brand -->
       <a class="navbar-brand fw-bold" href="#home">Jose Andres Acuña
         Rodriguez</a>
@@ -101,13 +101,20 @@
 
         <!-- Imagen o Ilustración -->
         <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="1000">
-          <img src="/public/img/me.png"
+          <img src="/public/img/image.png"
             alt="Portrait of Jose Andres Acuña Rodríguez, a full stack developer, smiling confidently in a professional setting with a blurred background suggesting a modern workspace"
             class="img-fluid hero-img">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Lightbox hero -->
+  <div class="lightbox" id="heroLightbox" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
+    <img src="/public/img/image.png" alt="Foto ampliada de Jose Andres" class="lightbox-img">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+  </div>
 
   <!-- About Section -->
   <section id="about" class="about section">
@@ -116,33 +123,26 @@
         <div class="col-lg-7" data-aos="fade-right">
           <h2 class="section-title">Sobre Mí</h2>
           <p class="section-subtitle">
-            Siempre aprendiendo cosas nuevas y aplicando soluciones innovadoras
-            que mejoren la experiencia de usuario o cliente.
+            Ingeniero en Tecnologías de la Información, apasionado por la tecnología
+            y por aprender algo nuevo cada día.
           </p>
           <p class="about-text">
-            Aquí podrás ver algunos de los proyectos que he desarrollado, desde
-            aplicaciones
-            web hasta soluciones móviles, utilizando las últimas tecnologías y
-            mejores
-            prácticas de desarrollo.
+            Me encanta convertir ideas en productos digitales útiles, trabajar en equipo
+            y mantenerme al día con las tendencias para construir soluciones con impacto real.
           </p>
 
           <div class="skills-grid">
             <div class="skill-category">
-              <h4>Frontend</h4>
-              <p>React, Vue.js, JavaScript ES6+, HTML5, CSS3</p>
+              <h4>Enfoque</h4>
+              <p>Ingeniería de software, desarrollo web y mobile, seguridad y CI/CD.</p>
             </div>
             <div class="skill-category">
-              <h4>Backend</h4>
-              <p>Laravel, PHP, Node.js, .NET API, Java</p>
+              <h4>Skills Clave</h4>
+              <p>Comunicación clara, trabajo en equipo, liderazgo técnico, resolución de problemas.</p>
             </div>
             <div class="skill-category">
-              <h4>Mobile</h4>
-              <p>Flutter, Dart, Kotlin</p>
-            </div>
-            <div class="skill-category">
-              <h4>Bases de Datos</h4>
-              <p>MySQL, PostgreSQL, MongoDB</p>
+              <h4>Mindset</h4>
+              <p>Aprendizaje continuo, orientación a resultados, mejora constante y curiosidad tecnológica.</p>
             </div>
           </div>
         </div>
@@ -162,10 +162,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects section">
+    <div class="projects-bg-video" aria-hidden="true">
+      <video autoplay muted loop playsinline>
+        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov" type="video/quicktime">
+        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov" type="video/mp4">
+        <!-- fallback -->
+      </video>
+    </div>
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
@@ -179,7 +188,7 @@
 
         <article class="project-card" data-aos="zoom-in" data-aos-delay="400">
           <div class="project-header api">
-            <i class="fas fa-shield-alt project-icon"></i>
+            <img src="/public/img/medivault.png" alt="MediVault screenshot" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">WEB SECURITY & FULL STACK APP</h4>
               <p>Node.js + Express + Docker + MySQL</p>
@@ -187,16 +196,14 @@
           </div>
 
           <div class="project-body">
-            <h3 class="project-title">MediVault – Gestión Médica Vulnerable OWASP</h3>
-            <p class="project-description">
-              <strong>MediVault</strong> es una aplicación clínica completa (citas, médicos, pacientes, historial,
-              panel administrativo y bitácoras) construida con Node.js, Express, Bootstrap, HTML/CSS y una base de datos
-              MariaDB orquestada en Docker Compose. Pensada como laboratorio ofensivo/defensivo, incluye scripts para
-              levantar todo el stack (API, base de datos y reverse proxy) con un solo comando.
-              <br /><br />
-              El sistema emula <strong>las 10 vulnerabilidades del OWASP Top 10 2021</strong> (Inyección SQL, XSS,
-              Broken Access Control, CSRF, Security Misconfiguration, etc.) para entrenar equipos en análisis, explotación
-              y remediación sobre una app real de gestión de citas médicas.
+            <h3 class="project-title d-flex align-items-center gap-2">
+              <i class="fas fa-shield-virus text-primary"></i>
+              MediVault – Gestión Médica Vulnerable OWASP
+            </h3>
+            <p class="project-description" id="medivaultDescription">
+              <strong>MediVault</strong> es una app clínica completa (citas, médicos, pacientes e historial) en Node.js,
+              Express y MariaDB orquestada con Docker Compose. Incluye scripts para levantar API, BD y proxy con un solo
+              comando y sirve como laboratorio ofensivo/defensivo emulando el OWASP Top 10.
             </p>
 
             <div class="tech-stack">
@@ -210,23 +217,25 @@
               <span class="tech-tag css">CSS</span>
             </div>
 
-            <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-primary" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a><br>
+            <div class="project-actions two-btns">
+              <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+                Ver en GitHub
+              </a>
 
-            <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-secondary btn-view" target="_blank"
-              rel="noopener">
-              <i class="fas fa-external-link-alt"></i>
-              Ver Documentación
-            </a>
+              <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-secondary btn-view" target="_blank"
+                rel="noopener">
+                <i class="fas fa-laptop-medical"></i>
+                Demo / Docs
+              </a>
+            </div>
           </div>
         </article>
 
         <!-- Following Cars -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="project-header database">
-            <i class="fas fa-car project-icon"></i>
+            <img src="/public/img/car2.png" alt="Following Cars screenshot" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">DATABASE MANAGEMENT</h4>
               <p>SQL & NoSQL Integration</p>
@@ -258,7 +267,7 @@
         <!-- Gestión de Viáticos -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
           <div class="project-header mobile">
-            <i class="fas fa-mobile-alt project-icon"></i>
+            <img src="/public/img/flutter1.png" alt="Gestión de Viáticos app" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">MOBILE DEVELOPMENT</h4>
               <p>Flutter & .NET API</p>
@@ -289,7 +298,7 @@
         <!-- FutCamp -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="project-header web">
-            <i class="fas fa-futbol project-icon"></i>
+            <img src="/public/img/futcam.png" alt="FutCamp panel" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">WEB APPLICATION</h4>
               <p>React + Next.js + Supabase</p>
@@ -321,7 +330,7 @@
         <!-- News Frontend -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="project-header web">
-            <i class="fas fa-newspaper project-icon"></i>
+            <img src="/public/img/dajoma.png" alt="DAJOMA News frontend" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">DAJOMA_NEWS FRONTEND</h4>
               <p>Next.js + TypeScript + Tailwind</p>
@@ -357,7 +366,7 @@
         <!-- News Scraper API -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="50">
           <div class="project-header api">
-            <i class="fas fa-spider project-icon"></i>
+            <img src="/public/img/py.webp" alt="News Scraper API" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">WEB SCRAPING API</h4>
               <p>Python FastAPI + Supabase</p>
@@ -389,7 +398,7 @@
         <!-- Sistema de Votaciones -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="project-header voting">
-            <i class="fas fa-vote-yea project-icon"></i>
+            <img src="/public/img/fondo1.webp" alt="Sistema de votaciones" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">VOTING SYSTEM</h4>
               <p>Java Desktop Application</p>
@@ -419,7 +428,7 @@
         <!-- Mariano Juvenil -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="800">
           <div class="project-header web">
-            <i class="fas fa-home project-icon"></i>
+            <img src="/public/img/mariano.png" alt="Mariano Juvenil sistema" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">MANAGEMENT SYSTEM</h4>
               <p>Laravel & Vue.js</p>
@@ -451,7 +460,7 @@
         <!-- Web Store Game -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="500">
           <div class="project-header web">
-            <i class="fas fa-shopping-cart project-icon"></i>
+            <img src="/public/img/gamer.jpg" alt="Web Store Game" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">E-COMMERCE</h4>
               <p>Gaming Store</p>
@@ -481,7 +490,7 @@
         <!-- API de Noticias -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="600">
           <div class="project-header news">
-            <i class="fas fa-newspaper project-icon"></i>
+            <img src="/public/img/n.jpg" alt="API de Noticias" class="project-thumb">
             <div class="project-overlay">
               <h4 class="project-overlay-title">NEWS API</h4>
               <p>Content Management</p>
@@ -710,6 +719,36 @@
         }
       });
     });
+
+    // Hero lightbox zoom
+    const heroImg = document.querySelector('.hero-img');
+    const lightbox = document.getElementById('heroLightbox');
+    const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-img') : null;
+    const lightboxBackdrop = lightbox ? lightbox.querySelector('.lightbox-backdrop') : null;
+    const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+    const closeLightbox = () => {
+      if (!lightbox) return;
+      lightbox.classList.remove('show');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    const openLightbox = () => {
+      if (!lightbox || !lightboxImg || !heroImg) return;
+      lightboxImg.src = heroImg.getAttribute('src');
+      lightbox.classList.add('show');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    if (heroImg) heroImg.addEventListener('click', openLightbox);
+    if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
   </script>
 </body>
 
