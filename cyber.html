@@ -62,13 +62,10 @@
           <div class="row align-items-center g-5">
             <div class="col-lg-6 fade-in" data-animate="slide-right">
               <p class="section-title mb-3">Perfil</p>
-              <h1 class="display-5 fw-bold hero-title">
-                <span class="typing">José Andrés Acuña Rodríguez</span>
-              </h1>
-              <p class="lead text-secondary">
-                Diseño defensas digitales, simulo ataques controlados y traduzco hallazgos técnicos en
-                planes accionables. Combino metodologías MITRE ATT&CK, OWASP y Zero Trust para
-                construir sistemas resilientes.
+              <h1 class="display-5 fw-bold hero-title">Especialista en Ciberseguridad &amp; Red Team</h1>
+              <p class="lead">
+                Diseño defensas digitales, simulo ataques controlados y traduzco hallazgos técnicos en planes accionables.
+                Combino metodologías MITRE ATT&amp;CK, OWASP y Zero Trust para construir sistemas resilientes.
               </p>
               <div class="d-flex flex-wrap gap-3 mt-4">
                 <div>
@@ -82,8 +79,12 @@
               </div>
               <div class="mt-4 d-flex flex-wrap gap-2">
                 <span class="badge badge-tech">Pentesting</span>
-                <span class="badge badge-tech">Soc Analisis</span>
-                <span class="badge badge-tech">Análisis Forense</span>
+                <span class="badge badge-tech">Red Team</span>
+                <span class="badge badge-tech">Forense</span>
+              </div>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-primary" href="#proyectos">&lt;/&gt; Ver informes</a>
+                <a class="btn btn-outline-primary" href="#habilidades">Conocer metodología</a>
               </div>
             </div>
             <div class="col-lg-6 fade-in" data-animate="zoom">
@@ -106,33 +107,28 @@
             <p class="section-title mb-3">Habilidades Clave</p>
             <h2 class="fw-semibold text-dark mb-3">Red Team y forense digital aplicados</h2>
             <p class="text-muted mb-4">
-              Red team, forense digital y pruebas de seguridad web respaldadas por análisis de paquetes
-              anómalos, investigación con VirusTotal y documentación meticulosa en Markdown.
+              Operaciones ofensivas, respuesta forense, pruebas OWASP y análisis SOC con reportes accionables y trazables.
             </p>
             <div class="skills-grid">
               <div class="skill-box">
-                <h6 class="text-dark mb-1">Red Team</h6>
-                <p class="text-muted small mb-0">Operaciones ofensivas y emulación de adversarios persistentes.</p>
+                <h6 class="text-dark mb-1">Red Team (Ofensivo)</h6>
+                <p class="text-muted small mb-0">Emulación de adversarios, persistencia y evasión de controles defensivos.</p>
               </div>
               <div class="skill-box">
-                <h6 class="text-dark mb-1">Forense Digital</h6>
-                <p class="text-muted small mb-0">Recuperación, preservación y análisis profundo de evidencias.</p>
+                <h6 class="text-dark mb-1">Forense Digital (Respuesta)</h6>
+                <p class="text-muted small mb-0">Adquisición, preservación y análisis de evidencias en disco y memoria.</p>
               </div>
               <div class="skill-box">
-                <h6 class="text-dark mb-1">Pruebas a páginas web</h6>
-                <p class="text-muted small mb-0">Evaluación de vulnerabilidades OWASP y pipelines de remediación.</p>
+                <h6 class="text-dark mb-1">Pruebas Web (OWASP)</h6>
+                <p class="text-muted small mb-0">Evaluación OWASP Top 10, hardening y reporting repetible.</p>
               </div>
               <div class="skill-box">
-                <h6 class="text-dark mb-1">Paquetes de red</h6>
-                <p class="text-muted small mb-0">Identificación de tráfico anómalo y correlación de eventos SOC.</p>
+                <h6 class="text-dark mb-1">Análisis de Redes (SOC)</h6>
+                <p class="text-muted small mb-0">Detección de tráfico anómalo, correlación de eventos y respuesta temprana.</p>
               </div>
               <div class="skill-box">
-                <h6 class="text-dark mb-1">VirusTotal e investigación</h6>
-                <p class="text-muted small mb-0">Cruce de IoC y enriquecimiento de reportes para decisiones rápidas.</p>
-              </div>
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Documentación Markdown</h6>
-                <p class="text-muted small mb-0">Casos, runbooks y reporting claro para equipos multidisciplinarios.</p>
+                <h6 class="text-dark mb-1">Documentación y Reporting</h6>
+                <p class="text-muted small mb-0">Runbooks, informes ejecutivos y trazabilidad de hallazgos y controles.</p>
               </div>
             </div>
             <div class="mt-4 d-flex flex-wrap gap-2">
@@ -150,11 +146,10 @@
       <section id="proyectos" class="py-5">
         <div class="container">
           <div class="section-heading text-center fade-in" data-animate="rise">
-            <p class="section-title mb-2">Proyectos</p>
-            <h2 class="fw-bold text-dark">Operaciones y herramientas de ciberseguridad</h2>
+            <p class="section-title mb-2">Informes y Casos de Estudio</p>
+            <h2 class="fw-bold text-dark">Operaciones y evaluaciones de ciberseguridad</h2>
             <p class="text-muted">
-              Cada entrega incluye documentación, tablero MITRE, scripts reproducibles y recomendaciones
-              finales.
+              Auditorías OWASP, emulación de adversarios y análisis forense con documentación y tableros MITRE accionables.
             </p>
           </div>
           <div class="row g-4">
@@ -168,9 +163,8 @@
                 <div class="project-body p-4 d-flex flex-column flex-grow-1">
                   <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
                   <p class="text-muted small flex-grow-1">
-                    Plataforma de administración de citas, médicos y pacientes diseñada como laboratorio OWASP Top 10
-                    2021. Todo el stack corre en Docker (API Node/Express, MariaDB y proxy) para practicar hardening,
-                    pentesting y monitoreo sobre un escenario realista.
+                    Laboratorio OWASP Top 10 2021 desplegado en Docker (API Node/Express, proxy y MariaDB) para prácticas de hardening,
+                    emulación de adversarios y monitoreo defensivo con tableros MITRE ATT&amp;CK y reportes repetibles.
                   </p>
                   <div class="project-tech mb-3">
                     <span class="tech-badge tech-go">Node.js</span>
@@ -225,19 +219,17 @@
                   <div class="d-flex align-items-center gap-2 mb-2">
                     <span class="badge bg-warning text-dark text-uppercase small">En progreso</span>
                   </div>
-                  <h5 class="text-dark"> AutoScan Web · Toolkit Python </h5>
+                  <h5 class="text-dark"> Análisis de tráfico y firewall </h5>
                   <p class="text-muted small flex-grow-1">
-                    Aplicación en Python que automatiza escaneos básicos a aplicaciones web (Nmap, Nikto, Gobuster/Feroxbuster,
-                    Dirsearch y Wfuzz) y consolida los hallazgos en un reporte HTML para visualizar servicios, rutas y parámetros sensibles.
+                    Caso de estudio sobre segmentación, captura de paquetes y reglas de firewall. Incluye timeline de eventos, IoC y
+                    recomendaciones de contención, erradicación y recuperación.
                   </p>
                   <div class="project-tech mb-3">
-                    <span class="tech-badge tech-go">Python</span>
-                    <span class="tech-badge tech-elastic">Nmap</span>
-                    <span class="tech-badge tech-soar">Nikto</span>
-                    <span class="tech-badge tech-cobalt">Gobuster</span>
-                    <span class="tech-badge tech-terraform">Feroxbuster</span>
-                    <span class="tech-badge tech-zeek">Dirsearch</span>
-                    <span class="tech-badge tech-zero">Wfuzz</span>
+                    <span class="tech-badge tech-go">PCAP</span>
+                    <span class="tech-badge tech-elastic">Wireshark</span>
+                    <span class="tech-badge tech-soar">Suricata</span>
+                    <span class="tech-badge tech-cobalt">Firewall</span>
+                    <span class="tech-badge tech-terraform">MITRE ATT&amp;CK</span>
                   </div>
                   <a class="btn btn-outline-secondary rounded-pill disabled" href="#!" aria-disabled="true">En desarrollo</a>
                 </div>
@@ -540,51 +532,66 @@
                 </p>
               </div>
             </div>
-            <div class="tools-grid mt-4">
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
-                  alt="Logo de Kali Linux"
-                  loading="lazy"
-                />
-                <h6>Kali Linux</h6>
-                <p>Auditorías ofensivas, exploit dev y OSINT guiado.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/tools/python.svg" alt="Logo de Python" loading="lazy" />
-                <h6>Python</h6>
-                <p>Automatizo recon y exploits para reportes reproducibles.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/tools/nmap.png" alt="Logo de Nmap" loading="lazy" />
-                <h6>Nmap</h6>
-                <p>Mapeo de red, detección de servicios y scripts NSE.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/gobuster.png" alt="Logo de Gobuster" loading="lazy" />
-                <h6>Gobuster</h6>
-                <p>Fuerza bruta para descubrimiento de rutas, DNS y S3.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/hydra.png" alt="Logo de Hydra" loading="lazy" />
-                <h6>Hydra</h6>
-                <p>Pruebas de credenciales en protocolos remotos críticos.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/wfuzz.png" alt="Logo de Wfuzz" loading="lazy" />
-                <h6>Wfuzz</h6>
-                <p>Fuzzing de parámetros y enumeración avanzada de APIs.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/nikto.png" alt="Logo de Nikto" loading="lazy" />
-                <h6>Nikto</h6>
-                <p>Escaneo rápido de configuraciones inseguras en servidores.</p>
-              </article>
-              <article class="tool-card" data-animate="rise" data-tilt="4">
-                <img src="public/img/tools/bash.svg" alt="Logo de Bash" loading="lazy" />
-                <h6>Automatización Bash</h6>
-                <p>Scripts para payloads, parsing de IOC y pivoteos.</p>
-              </article>
+            <div class="tools-groups mt-4">
+              <div class="tools-group fade-in" data-animate="rise">
+                <h5>Plataforma y scripting</h5>
+                <div class="tools-grid">
+                  <article class="tool-card" data-tilt="4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
+                      alt="Logo de Kali Linux"
+                      loading="lazy"
+                    />
+                    <h6>Kali Linux</h6>
+                    <p>Auditorías ofensivas, exploit dev y OSINT guiado.</p>
+                  </article>
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/tools/python.svg" alt="Logo de Python" loading="lazy" />
+                    <h6>Python</h6>
+                    <p>Automatizo recon y exploits para reportes reproducibles.</p>
+                  </article>
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/tools/bash.svg" alt="Logo de Bash" loading="lazy" />
+                    <h6>Automatización Bash</h6>
+                    <p>Scripts para payloads, parsing de IOC y pivoteos.</p>
+                  </article>
+                </div>
+              </div>
+              <div class="tools-group fade-in" data-animate="rise">
+                <h5>Reconocimiento y descubrimiento</h5>
+                <div class="tools-grid">
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/tools/nmap.png" alt="Logo de Nmap" loading="lazy" />
+                    <h6>Nmap</h6>
+                    <p>Mapeo de red, detección de servicios y scripts NSE.</p>
+                  </article>
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/gobuster.png" alt="Logo de Gobuster" loading="lazy" />
+                    <h6>Gobuster</h6>
+                    <p>Fuerza bruta para descubrimiento de rutas, DNS y S3.</p>
+                  </article>
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/nikto.png" alt="Logo de Nikto" loading="lazy" />
+                    <h6>Nikto</h6>
+                    <p>Escaneo rápido de configuraciones inseguras en servidores.</p>
+                  </article>
+                </div>
+              </div>
+              <div class="tools-group fade-in" data-animate="rise">
+                <h5>Explotación y fuerza bruta</h5>
+                <div class="tools-grid">
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/hydra.png" alt="Logo de Hydra" loading="lazy" />
+                    <h6>Hydra</h6>
+                    <p>Pruebas de credenciales en protocolos remotos críticos.</p>
+                  </article>
+                  <article class="tool-card" data-tilt="4">
+                    <img src="public/img/wfuzz.png" alt="Logo de Wfuzz" loading="lazy" />
+                    <h6>Wfuzz</h6>
+                    <p>Fuzzing de parámetros y enumeración avanzada de APIs.</p>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
         </div>
