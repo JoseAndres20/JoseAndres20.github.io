@@ -1,643 +1,553 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio Cyber</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="public/css/cyber.css" />
-  </head>
-  <body>
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light py-3">
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="#inicio">
-            Fairwell<span>ito</span>
-          </a>
-          <button
-            class="navbar-toggler text-dark border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto text-center">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre-mi">Información</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#habilidades">Habilidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#proyectos">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#certificaciones">Certificaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#herramientas">Herramientas</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <main id="inicio">
-      <section id="sobre-mi" class="hero">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 fade-in" data-animate="slide-right">
-              <p class="section-title mb-3">Perfil</p>
-              <h1 class="display-5 fw-bold hero-title">Especialista en Ciberseguridad &amp; Red Team</h1>
-              <p class="lead">
-                Diseño defensas digitales, simulo ataques controlados y traduzco hallazgos técnicos en planes accionables.
-                Combino metodologías MITRE ATT&amp;CK, OWASP y Zero Trust para construir sistemas resilientes.
-              </p>
-              <div class="d-flex flex-wrap gap-3 mt-4">
-                <div>
-                  <small class="text-uppercase text-muted">Estudio de carrera</small>
-                  <h5 class="mb-0 text-dark">3 años</h5>
-                </div>
-                <div>
-                  <small class="text-uppercase text-muted">Ubicación</small>
-                  <h5 class="mb-0 text-dark">Costa Rica</h5>
-                </div>
-              </div>
-              <div class="mt-4 d-flex flex-wrap gap-2">
-                <span class="badge badge-tech">Pentesting</span>
-                <span class="badge badge-tech">Red Team</span>
-                <span class="badge badge-tech">Forense</span>
-              </div>
-              <div class="d-flex flex-wrap gap-3 mt-4">
-                <a class="btn btn-primary" href="#proyectos">&lt;/&gt; Ver informes</a>
-                <a class="btn btn-outline-primary" href="#habilidades">Conocer metodología</a>
-              </div>
-            </div>
-            <div class="col-lg-6 fade-in" data-animate="zoom">
-              <div class="photo-wrapper" data-parallax="18">
-                <img
-                  src="public/img/me.png"
-                  alt="Retrato profesional de José Andrés"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio Cyber</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="public/css/cyber.css" />
+</head>
 
-      <section id="habilidades" class="py-5 position-relative">
-        <div class="glow"></div>
-        <div class="container position-relative">
-          <div class="section-card fade-in" data-animate="rise">
-            <p class="section-title mb-3">Habilidades Clave</p>
-            <h2 class="fw-semibold text-dark mb-3">Red Team y forense digital aplicados</h2>
-            <p class="text-muted mb-4">
-              Operaciones ofensivas, respuesta forense, pruebas OWASP y análisis SOC con reportes accionables y trazables.
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">
+          Fairwell<span>ito</span>
+        </a>
+        <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificaciones">Certificaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#herramientas">Herramientas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section id="sobre-mi" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 fade-in" data-animate="slide-right">
+            <p class="section-title mb-3">Perfil</p>
+            <h1 class="display-5 fw-bold hero-title">Especialista en Ciberseguridad &amp; Red Team</h1>
+            <p class="lead">
+              Diseño defensas digitales, simulo ataques controlados y traduzco hallazgos técnicos en planes accionables.
+              Combino metodologías MITRE ATT&amp;CK, OWASP y Zero Trust para construir sistemas resilientes.
             </p>
-            <div class="skills-grid">
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Red Team (Ofensivo)</h6>
-                <p class="text-muted small mb-0">Emulación de adversarios, persistencia y evasión de controles defensivos.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <div>
+                <small class="text-uppercase text-muted">Estudio de carrera</small>
+                <h5 class="mb-0 text-dark">3 años</h5>
               </div>
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Forense Digital (Respuesta)</h6>
-                <p class="text-muted small mb-0">Adquisición, preservación y análisis de evidencias en disco y memoria.</p>
-              </div>
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Pruebas Web (OWASP)</h6>
-                <p class="text-muted small mb-0">Evaluación OWASP Top 10, hardening y reporting repetible.</p>
-              </div>
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Análisis de Redes (SOC)</h6>
-                <p class="text-muted small mb-0">Detección de tráfico anómalo, correlación de eventos y respuesta temprana.</p>
-              </div>
-              <div class="skill-box">
-                <h6 class="text-dark mb-1">Documentación y Reporting</h6>
-                <p class="text-muted small mb-0">Runbooks, informes ejecutivos y trazabilidad de hallazgos y controles.</p>
+              <div>
+                <small class="text-uppercase text-muted">Ubicación</small>
+                <h5 class="mb-0 text-dark">Costa Rica</h5>
               </div>
             </div>
             <div class="mt-4 d-flex flex-wrap gap-2">
-              <span class="badge badge-tech">Colaborador</span>
-              <span class="badge badge-tech">Apasionado por los retos</span>
-              <span class="badge badge-tech">Aprendizaje continuo</span>
-              <span class="badge badge-tech">Abierto a críticas constructivas</span>
-              <span class="badge badge-tech">Trabajo en equipo</span>
-              <span class="badge badge-tech">Atención al detalle</span>
+              <span class="badge badge-tech">Pentesting</span>
+              <span class="badge badge-tech">Red Team</span>
+              <span class="badge badge-tech">Forense</span>
+            </div>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-primary" href="#proyectos">&lt;/&gt; Ver informes</a>
+              <a class="btn btn-outline-primary" href="#habilidades">Conocer metodología</a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="proyectos" class="py-5">
-        <div class="container">
-          <div class="section-heading text-center fade-in" data-animate="rise">
-            <p class="section-title mb-2">Informes y Casos de Estudio</p>
-            <h2 class="fw-bold text-dark">Operaciones y evaluaciones de ciberseguridad</h2>
-            <p class="text-muted">
-              Auditorías OWASP, emulación de adversarios y análisis forense con documentación y tableros MITRE accionables.
-            </p>
-          </div>
-          <div class="row g-4">
-            <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
-              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
-                <img
-                  src="/public/img/medivault.png"
-                  alt="Panel médico con indicadores de seguridad"
-                  class="img-fluid"
-                />
-                <div class="project-body p-4 d-flex flex-column flex-grow-1">
-                  <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
-                  <p class="text-muted small flex-grow-1">
-                    Laboratorio OWASP Top 10 2021 desplegado en Docker (API Node/Express, proxy y MariaDB) para prácticas de hardening,
-                    emulación de adversarios y monitoreo defensivo con tableros MITRE ATT&amp;CK y reportes repetibles.
-                  </p>
-                  <div class="project-tech mb-3">
-                    <span class="tech-badge tech-go">Node.js</span>
-                    <span class="tech-badge tech-terraform">Express</span>
-                    <span class="tech-badge tech-cobalt">Docker</span>
-                    <span class="tech-badge tech-ansible">MariaDB</span>
-                    <span class="tech-badge tech-elastic">Bootstrap</span>
-                    <span class="tech-badge tech-zero">HTML</span>
-                    <span class="tech-badge tech-cis">CSS</span>
-                  </div>
-                  <a
-                    class="btn btn-outline-primary rounded-pill"
-                    href="https://github.com/JoseAndres20/MediVault"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Ver repositorio</a
-                  >
-                </div>
-              </div>
-            </article>
-            <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
-              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
-                <img src="/public/img/cotai.png" alt="Auditoría de infraestructura de red" class="img-fluid" />
-                <div class="project-body p-4 d-flex flex-column flex-grow-1">
-                  <h5 class="text-dark"> Auditoría de infraestructura · Colegio Técnico COTAI </h5>
-                  <p class="text-muted small flex-grow-1">
-                    Evaluación integral de la red académica: mapeo de VLAN, pruebas de resistencia, revisión de firewalls y plan de
-                    mejoras priorizadas. Incluye hallazgos, matriz de riesgos y plan de remediación faseado.
-                  </p>
-                  <div class="project-tech mb-3">
-                    <span class="tech-badge tech-zeek">Wireshark</span>
-                    <span class="tech-badge tech-soar">Nmap</span>
-                    <span class="tech-badge tech-terraform">Fortinet</span>
-                    <span class="tech-badge tech-cobalt">Cisco</span>
-                    <span class="tech-badge tech-go">Markdown</span>
-                    <span class="tech-badge tech-ansible">Documentación</span>
-                  </div>
-                  <a
-                    class="btn btn-outline-primary rounded-pill"
-                    href="https://docs.google.com/document/d/1S8_MW-pMAAIRgX88-sFip_Y69XqMC27v/edit"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Ver informe</a
-                  >
-                </div>
-              </div>
-            </article>
-            <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
-              <div class="project-card h-100 d-flex flex-column" data-tilt="6">
-                <img src="/public/img/en-desarrollo.svg" alt="Proyecto en desarrollo" class="img-fluid" />
-                <div class="project-body p-4 d-flex flex-column flex-grow-1">
-                  <div class="d-flex align-items-center gap-2 mb-2">
-                    <span class="badge bg-warning text-dark text-uppercase small">En progreso</span>
-                  </div>
-                  <h5 class="text-dark"> Análisis de tráfico y firewall </h5>
-                  <p class="text-muted small flex-grow-1">
-                    Caso de estudio sobre segmentación, captura de paquetes y reglas de firewall. Incluye timeline de eventos, IoC y
-                    recomendaciones de contención, erradicación y recuperación.
-                  </p>
-                  <div class="project-tech mb-3">
-                    <span class="tech-badge tech-go">PCAP</span>
-                    <span class="tech-badge tech-elastic">Wireshark</span>
-                    <span class="tech-badge tech-soar">Suricata</span>
-                    <span class="tech-badge tech-cobalt">Firewall</span>
-                    <span class="tech-badge tech-terraform">MITRE ATT&amp;CK</span>
-                  </div>
-                  <a class="btn btn-outline-secondary rounded-pill disabled" href="#!" aria-disabled="true">En desarrollo</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="certificaciones" class="py-5">
-        <div class="container">
-          <div class="section-card fade-in" data-animate="rise">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4 mb-4">
-              <div>
-                <h3 class="text-dark mb-2">Certificaciones</h3>
-                <p class="text-muted mb-0">
-                  Colección de certificaciones que respaldan las prácticas ofensivas, defensivas y de cumplimiento
-                  que aplico en cada proyecto.
-                </p>
-              </div>
-            </div>
-            <div class="cert-grid">
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a
-                  href="public/img/Coursera%20PGKSDYGTPR1R.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="d-block cert-thumb"
-                >
-                  <img
-                    src="public/img/cert-pgksdygtpr1r.png"
-                    alt="Hands-On Web App Pentesting - Certificado"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Packt · Coursera</p>
-                  <h5 class="text-dark mb-1">Hands-On Web App Pentesting</h5>
-                  <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Prácticas guiadas de explotación OWASP Top 10 con reportes repetibles y controles de remediación.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-outline-primary btn-sm"
-                    href="public/img/Coursera%20PGKSDYGTPR1R.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver título (PDF)
-                  </a>
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://coursera.org/verify/PGKSDYGTPR1R"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Verificar
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a
-                  href="public/img/JoseAcuna-Switching%20Routin-certificate.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="d-block cert-thumb"
-                >
-                  <img
-                    src="public/img/cert-ccna-srwe.png"
-                    alt="CCNAv7 Switching, Routing and Wireless Essentials - Certificado"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Cisco Networking Academy</p>
-                  <h5 class="text-dark mb-1">CCNAv7: Switching, Routing & Wireless Essentials</h5>
-                  <p class="text-muted small mb-0">Universidad Técnica Nacional · Agosto 2024</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  STP, EtherChannel, redundancia de primer salto y endurecimiento de infraestructura inalámbrica.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-outline-primary btn-sm"
-                    href="public/img/JoseAcuna-Switching%20Routin-certificate.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver título (PDF)
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a
-                  href="public/img/JoseAcuna-Fundamentos%20de%20R-certificate.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="d-block cert-thumb"
-                >
-                  <img
-                    src="public/img/cert-ccna-intro.png"
-                    alt="CCNAv7 Introducción a Redes - Certificado"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Cisco Networking Academy</p>
-                  <h5 class="text-dark mb-1">CCNAv7: Introducción a Redes</h5>
-                  <p class="text-muted small mb-0">Universidad Técnica Nacional · Abril 2024</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Configuración de switches, direccionamiento IPv4/IPv6 y solución de incidencias en redes pequeñas.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-outline-primary btn-sm"
-                    href="public/img/JoseAcuna-Fundamentos%20de%20R-certificate.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver título (PDF)
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a
-                  href="public/img/Coursera%20LBRHFS62RRSJ.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="d-block cert-thumb"
-                >
-                  <img
-                    src="public/img/cert-lbrhfs62rrsj.png"
-                    alt="Introduction to Cybersecurity Tools & Cyberattacks - Certificado"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">IBM Skills Network</p>
-                  <h5 class="text-dark mb-1">Introduction to Cybersecurity Tools & Cyberattacks</h5>
-                  <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Mapeo de tácticas adversarias, herramientas SOC y cadenas de ataque MITRE ATT&CK.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-outline-primary btn-sm"
-                    href="public/img/Coursera%20LBRHFS62RRSJ.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver título (PDF)
-                  </a>
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://coursera.org/verify/LBRHFS62RRSJ"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Verificar
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a
-                  href="public/img/Coursera%20UH1ZEOM3L49W.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="d-block cert-thumb"
-                >
-                  <img
-                    src="public/img/cert-uh1zeom3l49w.png"
-                    alt="Introducción a Cybersecurity Essentials - Certificado"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">IBM Skills Network</p>
-                  <h5 class="text-dark mb-1">Introduction to Cybersecurity Essentials</h5>
-                  <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Fundamentos operativos de defensa, amenazas y mejores prácticas para proteger activos corporativos.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-outline-primary btn-sm"
-                    href="public/img/Coursera%20UH1ZEOM3L49W.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver título (PDF)
-                  </a>
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://coursera.org/verify/UH1ZEOM3L49W"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Verificar
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a href="public/img/c2.png" target="_blank" rel="noreferrer" class="d-block cert-thumb">
-                  <img
-                    src="public/img/c2.png"
-                    alt="Certificado Kali Linux 101"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-dark-subtle text-dark text-uppercase mb-2 small">Offensive Labs</p>
-                  <h5 class="text-dark mb-1">Kali Linux 101</h5>
-                  <p class="text-muted small mb-0">Bootcamp de herramientas ofensivas.</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Dominio de utilidades básicas de Kali para reconocimiento, explotación y documentación posterior.
-                </p>
-                <div>
-                  <a class="btn btn-outline-primary btn-sm" href="public/img/c2.png" target="_blank" rel="noreferrer">
-                    Ver título (PNG)
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a href="public/img/c1.png" target="_blank" rel="noreferrer" class="d-block cert-thumb">
-                  <img
-                    src="public/img/c1.png"
-                    alt="Certificado Ciberseguridad Cooperasur"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-dark-subtle text-dark text-uppercase mb-2 small">Cooperasur</p>
-                  <h5 class="text-dark mb-1">Ciberseguridad Cooperasur</h5>
-                  <p class="text-muted small mb-0">Programa de concientización y prácticas defensivas.</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Refuerza controles de acceso, respuesta a incidentes y documentación preventiva dentro de la cooperativa.
-                </p>
-                <div>
-                  <a class="btn btn-outline-primary btn-sm" href="public/img/c1.png" target="_blank" rel="noreferrer">
-                    Ver título (PNG)
-                  </a>
-                </div>
-              </article>
-              <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
-                <a href="https://www.credly.com/users/jose-andres.6becfd8f" target="_blank" rel="noreferrer" class="d-block cert-thumb">
-                  <img
-                    src="public/img/credly-badge.svg"
-                    alt="Perfil de Credly de José Andrés con badges verificados"
-                    class="img-fluid rounded shadow-sm"
-                    loading="lazy"
-                  />
-                </a>
-                <div>
-                  <p class="badge bg-warning-subtle text-warning text-uppercase mb-2 small">Credly</p>
-                  <h5 class="text-dark mb-1">Credly · Badges verificados</h5>
-                  <p class="text-muted small mb-0">Repositorio público de insignias profesionales.</p>
-                </div>
-                <p class="text-muted small mb-0">
-                  Colección centralizada de certificaciones digitales emitidas por IBM, Cisco, Packt y otras entidades con verificación en un solo clic.
-                </p>
-                <div class="d-flex flex-wrap gap-2">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://www.credly.com/users/jose-andres.6becfd8f"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ver perfil en Credly
-                  </a>
-                </div>
-              </article>
+          <div class="col-lg-6 fade-in" data-animate="zoom">
+            <div class="photo-wrapper" data-parallax="18">
+              <img src="public/img/me.png" alt="Retrato profesional de José Andrés" class="img-fluid" />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="herramientas" class="py-5">
-        <div class="container">
-          <div class="section-card fade-in" data-animate="rise">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4">
-              <div>
-                <h3 class="text-dark mb-3">Herramientas</h3>
-                <p class="text-muted mb-0">
-                  Combino distros ofensivas, orquestadores y plataformas de observabilidad para cubrir desde
-                  la fase de reconocimiento hasta la respuesta automatizada.
-                </p>
-              </div>
-            </div>
-            <div class="tools-groups mt-4">
-              <div class="tools-group fade-in" data-animate="rise">
-                <h5>Plataforma y scripting</h5>
-                <div class="tools-grid">
-                  <article class="tool-card" data-tilt="4">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
-                      alt="Logo de Kali Linux"
-                      loading="lazy"
-                    />
-                    <h6>Kali Linux</h6>
-                    <p>Auditorías ofensivas, exploit dev y OSINT guiado.</p>
-                  </article>
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/tools/python.svg" alt="Logo de Python" loading="lazy" />
-                    <h6>Python</h6>
-                    <p>Automatizo recon y exploits para reportes reproducibles.</p>
-                  </article>
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/tools/bash.svg" alt="Logo de Bash" loading="lazy" />
-                    <h6>Automatización Bash</h6>
-                    <p>Scripts para payloads, parsing de IOC y pivoteos.</p>
-                  </article>
-                </div>
-              </div>
-              <div class="tools-group fade-in" data-animate="rise">
-                <h5>Reconocimiento y descubrimiento</h5>
-                <div class="tools-grid">
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/tools/nmap.png" alt="Logo de Nmap" loading="lazy" />
-                    <h6>Nmap</h6>
-                    <p>Mapeo de red, detección de servicios y scripts NSE.</p>
-                  </article>
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/gobuster.png" alt="Logo de Gobuster" loading="lazy" />
-                    <h6>Gobuster</h6>
-                    <p>Fuerza bruta para descubrimiento de rutas, DNS y S3.</p>
-                  </article>
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/nikto.png" alt="Logo de Nikto" loading="lazy" />
-                    <h6>Nikto</h6>
-                    <p>Escaneo rápido de configuraciones inseguras en servidores.</p>
-                  </article>
-                </div>
-              </div>
-              <div class="tools-group fade-in" data-animate="rise">
-                <h5>Explotación y fuerza bruta</h5>
-                <div class="tools-grid">
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/hydra.png" alt="Logo de Hydra" loading="lazy" />
-                    <h6>Hydra</h6>
-                    <p>Pruebas de credenciales en protocolos remotos críticos.</p>
-                  </article>
-                  <article class="tool-card" data-tilt="4">
-                    <img src="public/img/wfuzz.png" alt="Logo de Wfuzz" loading="lazy" />
-                    <h6>Wfuzz</h6>
-                    <p>Fuzzing de parámetros y enumeración avanzada de APIs.</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="py-4">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-        <p class="mb-2 mb-md-0 text-muted">© 2025 José Andrés</p>
-        <div class="footer-links d-flex gap-2">
-          <a
-            href="https://github.com/JoseAndres20"
-            target="_blank"
-            rel="noreferrer"
-            class="btn-icon github"
-            aria-label="GitHub"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-1.8c-3.4.7-4.1-1.6-4.1-1.6-.6-1.5-1.3-1.9-1.3-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.3 0-1.4.5-2.5 1.2-3.4-.2-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.3 2.9.1 3.2.8.9 1.2 2 1.2 3.4 0 5-2.9 6-5.6 6.3.4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A12 12 0 0 0 12 .5Z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/"
-            target="_blank"
-            rel="noreferrer"
-            class="btn-icon linkedin"
-            aria-label="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M20.4 20.4h-3.5V14c0-1.5-.5-2.5-1.8-2.5-.9 0-1.4.6-1.6 1.2-.1.2-.1.6-.1.9v6.8h-3.5s.1-11 0-12.1h3.5v1.7c.5-.8 1.4-1.9 3.3-1.9 2.4 0 4.2 1.5 4.2 4.7v7.6ZM5.3 6.7c-1.2 0-2-.8-2-1.8 0-.9.8-1.8 2-1.8s2 .8 2 1.8-.8 1.8-2 1.8Zm-1.8 13.7h3.6V8.2H3.5v12.2Z"
-              />
-            </svg>
-          </a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="public/js/cyber.js"></script>
+    <section id="habilidades" class="py-5 position-relative">
+      <div class="glow"></div>
+      <div class="container position-relative">
+        <div class="section-card fade-in" data-animate="rise">
+          <p class="section-title mb-3">Habilidades Clave</p>
+          <h2 class="fw-semibold text-dark mb-3">Red Team y forense digital aplicados</h2>
+          <p class="text-muted mb-4">
+            Operaciones ofensivas, respuesta forense, pruebas OWASP y análisis SOC con reportes accionables y trazables.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-box">
+              <h6 class="text-dark mb-1">Red Team (Ofensivo)</h6>
+              <p class="text-muted small mb-0">Emulación de adversarios, persistencia y evasión de controles defensivos.
+              </p>
+            </div>
+            <div class="skill-box">
+              <h6 class="text-dark mb-1">Forense Digital (Respuesta)</h6>
+              <p class="text-muted small mb-0">Adquisición, preservación y análisis de evidencias en disco y memoria.
+              </p>
+            </div>
+            <div class="skill-box">
+              <h6 class="text-dark mb-1">Pruebas Web (OWASP)</h6>
+              <p class="text-muted small mb-0">Evaluación OWASP Top 10, hardening y reporting repetible.</p>
+            </div>
+            <div class="skill-box">
+              <h6 class="text-dark mb-1">Análisis de Redes (SOC)</h6>
+              <p class="text-muted small mb-0">Detección de tráfico anómalo, correlación de eventos y respuesta
+                temprana.</p>
+            </div>
+            <div class="skill-box">
+              <h6 class="text-dark mb-1">Documentación y Reporting</h6>
+              <p class="text-muted small mb-0">Runbooks, informes ejecutivos y trazabilidad de hallazgos y controles.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <span class="badge badge-tech">Colaborador</span>
+            <span class="badge badge-tech">Apasionado por los retos</span>
+            <span class="badge badge-tech">Aprendizaje continuo</span>
+            <span class="badge badge-tech">Abierto a críticas constructivas</span>
+            <span class="badge badge-tech">Trabajo en equipo</span>
+            <span class="badge badge-tech">Atención al detalle</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </body>
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <div class="section-heading text-center fade-in" data-animate="rise">
+          <p class="section-title mb-2">Informes y Casos de Estudio</p>
+          <h2 class="fw-bold text-dark">Operaciones y evaluaciones de ciberseguridad</h2>
+          <p class="text-muted">
+            Auditorías OWASP, emulación de adversarios y análisis forense con documentación y tableros MITRE
+            accionables.
+          </p>
+        </div>
+        <div class="row g-4">
+          <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+            <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+              <img src="/public/img/medivault.png" alt="Panel médico con indicadores de seguridad" class="img-fluid" />
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h5 class="text-dark"> MediVault · Gestión clínica vulnerable </h5>
+                <p class="text-muted small flex-grow-1">
+                  Laboratorio OWASP Top 10 2021 desplegado en Docker (API Node/Express, proxy y MariaDB) para prácticas
+                  de hardening,
+                  emulación de adversarios y monitoreo defensivo con tableros MITRE ATT&amp;CK y reportes repetibles.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-badge tech-go">Node.js</span>
+                  <span class="tech-badge tech-terraform">Express</span>
+                  <span class="tech-badge tech-cobalt">Docker</span>
+                  <span class="tech-badge tech-ansible">MariaDB</span>
+                  <span class="tech-badge tech-elastic">Bootstrap</span>
+                  <span class="tech-badge tech-zero">HTML</span>
+                  <span class="tech-badge tech-cis">CSS</span>
+                </div>
+                <a class="btn btn-outline-primary rounded-pill" href="https://github.com/JoseAndres20/MediVault"
+                  target="_blank" rel="noreferrer">Ver repositorio</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+            <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+              <img src="/public/img/cotai.png" alt="Auditoría de infraestructura de red" class="img-fluid" />
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h5 class="text-dark"> Auditoría de infraestructura · Colegio Técnico COTAI </h5>
+                <p class="text-muted small flex-grow-1">
+                  Evaluación integral de la red académica: mapeo de VLAN, pruebas de resistencia, revisión de firewalls
+                  y plan de
+                  mejoras priorizadas. Incluye hallazgos, matriz de riesgos y plan de remediación faseado.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-badge tech-zeek">Wireshark</span>
+                  <span class="tech-badge tech-soar">Nmap</span>
+                  <span class="tech-badge tech-terraform">Fortinet</span>
+                  <span class="tech-badge tech-cobalt">Cisco</span>
+                  <span class="tech-badge tech-go">Markdown</span>
+                  <span class="tech-badge tech-ansible">Documentación</span>
+                </div>
+                <a class="btn btn-outline-primary rounded-pill"
+                  href="https://docs.google.com/document/d/1S8_MW-pMAAIRgX88-sFip_Y69XqMC27v/edit" target="_blank"
+                  rel="noreferrer">Ver informe</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+            <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+              <img src="./public/img/img2.avif" alt="Vulneración DVWA" class="img-fluid" />
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h5 class="text-dark"> Vulneración DVWA (Medium) </h5>
+                <p class="text-muted small flex-grow-1">
+                  Proyecto de explotación y documentación de vulnerabilidades en DVWA con nivel de seguridad medio.
+                  Uso de metodologías de pentesting para identificar y explotar fallos de seguridad.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-badge tech-go">Markdown</span>
+                  <span class="tech-badge tech-terraform">Gobuster</span>
+                  <span class="tech-badge tech-cobalt">Burp Suite</span>
+                  <span class="tech-badge tech-ansible">Dirsearch</span>
+                </div>
+                <a class="btn btn-outline-primary rounded-pill"
+                  href="https://github.com/JoseAndres20/PTES_DVWA/tree/main" target="_blank" rel="noreferrer">Ver
+                  repositorio</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4 fade-in" data-animate="rise">
+            <div class="project-card h-100 d-flex flex-column" data-tilt="6">
+              <img src="/public/img/en-desarrollo.svg" alt="Proyecto en desarrollo" class="img-fluid" />
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-warning text-dark text-uppercase small">En progreso</span>
+                </div>
+                <h5 class="text-dark"> Análisis de tráfico y firewall </h5>
+                <p class="text-muted small flex-grow-1">
+                  Caso de estudio sobre segmentación, captura de paquetes y reglas de firewall. Incluye timeline de
+                  eventos, IoC y
+                  recomendaciones de contención, erradicación y recuperación.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-badge tech-go">PCAP</span>
+                  <span class="tech-badge tech-elastic">Wireshark</span>
+                  <span class="tech-badge tech-soar">Suricata</span>
+                  <span class="tech-badge tech-cobalt">Firewall</span>
+                  <span class="tech-badge tech-terraform">MITRE ATT&amp;CK</span>
+                </div>
+                <a class="btn btn-outline-secondary rounded-pill disabled" href="#!" aria-disabled="true">En
+                  desarrollo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificaciones" class="py-5">
+      <div class="container">
+        <div class="section-card fade-in" data-animate="rise">
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4 mb-4">
+            <div>
+              <h3 class="text-dark mb-2">Certificaciones</h3>
+              <p class="text-muted mb-0">
+                Colección de certificaciones que respaldan las prácticas ofensivas, defensivas y de cumplimiento
+                que aplico en cada proyecto.
+              </p>
+            </div>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/Coursera%20PGKSDYGTPR1R.pdf" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/cert-pgksdygtpr1r.png" alt="Hands-On Web App Pentesting - Certificado"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Packt · Coursera</p>
+                <h5 class="text-dark mb-1">Hands-On Web App Pentesting</h5>
+                <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Prácticas guiadas de explotación OWASP Top 10 con reportes repetibles y controles de remediación.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary btn-sm" href="public/img/Coursera%20PGKSDYGTPR1R.pdf" target="_blank"
+                  rel="noreferrer">
+                  Ver título (PDF)
+                </a>
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/verify/PGKSDYGTPR1R" target="_blank"
+                  rel="noreferrer">
+                  Verificar
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/JoseAcuna-Switching%20Routin-certificate.pdf" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/cert-ccna-srwe.png"
+                  alt="CCNAv7 Switching, Routing and Wireless Essentials - Certificado"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Cisco Networking
+                  Academy</p>
+                <h5 class="text-dark mb-1">CCNAv7: Switching, Routing & Wireless Essentials</h5>
+                <p class="text-muted small mb-0">Universidad Técnica Nacional · Agosto 2024</p>
+              </div>
+              <p class="text-muted small mb-0">
+                STP, EtherChannel, redundancia de primer salto y endurecimiento de infraestructura inalámbrica.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary btn-sm" href="public/img/JoseAcuna-Switching%20Routin-certificate.pdf"
+                  target="_blank" rel="noreferrer">
+                  Ver título (PDF)
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/JoseAcuna-Fundamentos%20de%20R-certificate.pdf" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/cert-ccna-intro.png" alt="CCNAv7 Introducción a Redes - Certificado"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">Cisco Networking
+                  Academy</p>
+                <h5 class="text-dark mb-1">CCNAv7: Introducción a Redes</h5>
+                <p class="text-muted small mb-0">Universidad Técnica Nacional · Abril 2024</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Configuración de switches, direccionamiento IPv4/IPv6 y solución de incidencias en redes pequeñas.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary btn-sm"
+                  href="public/img/JoseAcuna-Fundamentos%20de%20R-certificate.pdf" target="_blank" rel="noreferrer">
+                  Ver título (PDF)
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/Coursera%20LBRHFS62RRSJ.pdf" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/cert-lbrhfs62rrsj.png"
+                  alt="Introduction to Cybersecurity Tools & Cyberattacks - Certificado"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">IBM Skills Network
+                </p>
+                <h5 class="text-dark mb-1">Introduction to Cybersecurity Tools & Cyberattacks</h5>
+                <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Mapeo de tácticas adversarias, herramientas SOC y cadenas de ataque MITRE ATT&CK.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary btn-sm" href="public/img/Coursera%20LBRHFS62RRSJ.pdf" target="_blank"
+                  rel="noreferrer">
+                  Ver título (PDF)
+                </a>
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/verify/LBRHFS62RRSJ" target="_blank"
+                  rel="noreferrer">
+                  Verificar
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/Coursera%20UH1ZEOM3L49W.pdf" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/cert-uh1zeom3l49w.png" alt="Introducción a Cybersecurity Essentials - Certificado"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-primary-subtle text-primary-emphasis text-uppercase mb-2 small">IBM Skills Network
+                </p>
+                <h5 class="text-dark mb-1">Introduction to Cybersecurity Essentials</h5>
+                <p class="text-muted small mb-0">Coursera · Octubre 2025</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Fundamentos operativos de defensa, amenazas y mejores prácticas para proteger activos corporativos.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary btn-sm" href="public/img/Coursera%20UH1ZEOM3L49W.pdf" target="_blank"
+                  rel="noreferrer">
+                  Ver título (PDF)
+                </a>
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/verify/UH1ZEOM3L49W" target="_blank"
+                  rel="noreferrer">
+                  Verificar
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/c2.png" target="_blank" rel="noreferrer" class="d-block cert-thumb">
+                <img src="public/img/c2.png" alt="Certificado Kali Linux 101" class="img-fluid rounded shadow-sm"
+                  loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-dark-subtle text-dark text-uppercase mb-2 small">Offensive Labs</p>
+                <h5 class="text-dark mb-1">Kali Linux 101</h5>
+                <p class="text-muted small mb-0">Bootcamp de herramientas ofensivas.</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Dominio de utilidades básicas de Kali para reconocimiento, explotación y documentación posterior.
+              </p>
+              <div>
+                <a class="btn btn-outline-primary btn-sm" href="public/img/c2.png" target="_blank" rel="noreferrer">
+                  Ver título (PNG)
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="public/img/c1.png" target="_blank" rel="noreferrer" class="d-block cert-thumb">
+                <img src="public/img/c1.png" alt="Certificado Ciberseguridad Cooperasur"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-dark-subtle text-dark text-uppercase mb-2 small">Cooperasur</p>
+                <h5 class="text-dark mb-1">Ciberseguridad Cooperasur</h5>
+                <p class="text-muted small mb-0">Programa de concientización y prácticas defensivas.</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Refuerza controles de acceso, respuesta a incidentes y documentación preventiva dentro de la
+                cooperativa.
+              </p>
+              <div>
+                <a class="btn btn-outline-primary btn-sm" href="public/img/c1.png" target="_blank" rel="noreferrer">
+                  Ver título (PNG)
+                </a>
+              </div>
+            </article>
+            <article class="cert-card d-flex flex-column gap-3" data-animate="zoom">
+              <a href="https://www.credly.com/users/jose-andres.6becfd8f" target="_blank" rel="noreferrer"
+                class="d-block cert-thumb">
+                <img src="public/img/credly-badge.svg" alt="Perfil de Credly de José Andrés con badges verificados"
+                  class="img-fluid rounded shadow-sm" loading="lazy" />
+              </a>
+              <div>
+                <p class="badge bg-warning-subtle text-warning text-uppercase mb-2 small">Credly</p>
+                <h5 class="text-dark mb-1">Credly · Badges verificados</h5>
+                <p class="text-muted small mb-0">Repositorio público de insignias profesionales.</p>
+              </div>
+              <p class="text-muted small mb-0">
+                Colección centralizada de certificaciones digitales emitidas por IBM, Cisco, Packt y otras entidades con
+                verificación en un solo clic.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-sm" href="https://www.credly.com/users/jose-andres.6becfd8f"
+                  target="_blank" rel="noreferrer">
+                  Ver perfil en Credly
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="herramientas" class="py-5">
+      <div class="container">
+        <div class="section-card fade-in" data-animate="rise">
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4">
+            <div>
+              <h3 class="text-dark mb-3">Herramientas</h3>
+              <p class="text-muted mb-0">
+                Combino distros ofensivas, orquestadores y plataformas de observabilidad para cubrir desde
+                la fase de reconocimiento hasta la respuesta automatizada.
+              </p>
+            </div>
+          </div>
+          <div class="tools-groups mt-4">
+            <div class="tools-group fade-in" data-animate="rise">
+              <h5>Plataforma y scripting</h5>
+              <div class="tools-grid">
+                <article class="tool-card" data-tilt="4">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kali-dragon-icon.svg"
+                    alt="Logo de Kali Linux" loading="lazy" />
+                  <h6>Kali Linux</h6>
+                  <p>Auditorías ofensivas, exploit dev y OSINT guiado.</p>
+                </article>
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/tools/python.svg" alt="Logo de Python" loading="lazy" />
+                  <h6>Python</h6>
+                  <p>Automatizo recon y exploits para reportes reproducibles.</p>
+                </article>
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/tools/bash.svg" alt="Logo de Bash" loading="lazy" />
+                  <h6>Automatización Bash</h6>
+                  <p>Scripts para payloads, parsing de IOC y pivoteos.</p>
+                </article>
+              </div>
+            </div>
+            <div class="tools-group fade-in" data-animate="rise">
+              <h5>Reconocimiento y descubrimiento</h5>
+              <div class="tools-grid">
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/tools/nmap.png" alt="Logo de Nmap" loading="lazy" />
+                  <h6>Nmap</h6>
+                  <p>Mapeo de red, detección de servicios y scripts NSE.</p>
+                </article>
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/gobuster.png" alt="Logo de Gobuster" loading="lazy" />
+                  <h6>Gobuster</h6>
+                  <p>Fuerza bruta para descubrimiento de rutas, DNS y S3.</p>
+                </article>
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/nikto.png" alt="Logo de Nikto" loading="lazy" />
+                  <h6>Nikto</h6>
+                  <p>Escaneo rápido de configuraciones inseguras en servidores.</p>
+                </article>
+              </div>
+            </div>
+            <div class="tools-group fade-in" data-animate="rise">
+              <h5>Explotación y fuerza bruta</h5>
+              <div class="tools-grid">
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/hydra.png" alt="Logo de Hydra" loading="lazy" />
+                  <h6>Hydra</h6>
+                  <p>Pruebas de credenciales en protocolos remotos críticos.</p>
+                </article>
+                <article class="tool-card" data-tilt="4">
+                  <img src="public/img/wfuzz.png" alt="Logo de Wfuzz" loading="lazy" />
+                  <h6>Wfuzz</h6>
+                  <p>Fuzzing de parámetros y enumeración avanzada de APIs.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+      <p class="mb-2 mb-md-0 text-muted">© 2025 José Andrés</p>
+      <div class="footer-links d-flex gap-2">
+        <a href="https://github.com/JoseAndres20" target="_blank" rel="noreferrer" class="btn-icon github"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-1.8c-3.4.7-4.1-1.6-4.1-1.6-.6-1.5-1.3-1.9-1.3-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.3 0-1.4.5-2.5 1.2-3.4-.2-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.3 2.9.1 3.2.8.9 1.2 2 1.2 3.4 0 5-2.9 6-5.6 6.3.4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A12 12 0 0 0 12 .5Z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer" class="btn-icon linkedin"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.4 20.4h-3.5V14c0-1.5-.5-2.5-1.8-2.5-.9 0-1.4.6-1.6 1.2-.1.2-.1.6-.1.9v6.8h-3.5s.1-11 0-12.1h3.5v1.7c.5-.8 1.4-1.9 3.3-1.9 2.4 0 4.2 1.5 4.2 4.7v7.6ZM5.3 6.7c-1.2 0-2-.8-2-1.8 0-.9.8-1.8 2-1.8s2 .8 2 1.8-.8 1.8-2 1.8Zm-1.8 13.7h3.6V8.2H3.5v12.2Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="public/js/cyber.js"></script>
+
+</body>
+
 </html>
