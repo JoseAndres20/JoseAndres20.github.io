@@ -1,0 +1,39 @@
+/* ===== SENIOR POLISH ADDITIONAL STYLES ===== */
+/* Refactored from inline styles for better maintainability */
+
+.project-header-saas {
+  height: 280px;
+  background: linear-gradient(145deg, #1a1c24, #12141d);
+}
+
+.carousel-img-contain {
+  max-height: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* Tech Icon Colors */
+.icon-js { color: #f7df1e; }
+.icon-react { color: #61dafb; }
+.icon-vue { color: #4fc08d; }
+.icon-laravel { color: #ff2d20; }
+.icon-php { color: #777bb4; }
+.icon-java { color: #ed8b00; }
+.icon-python { color: #3776ab; }
+.icon-flutter { color: #02569b; }
+.icon-bootstrap { color: #7952b3; }
+.icon-nodejs { color: #68a063; }
+.icon-mysql { color: #4479a1; }
+.icon-postgresql { color: #336791; }
+.icon-mongodb { color: #47a248; }
+.icon-docker { color: #2496ed; }
+.icon-git { color: #f05032; }
+.icon-html5 { color: #e34f26; }
+.icon-css3 { color: #1572b6; }
+.icon-kotlin { color: #7f52ff; }
+
+/* Fixed size icons */
+.icon-size-md {
+  width: 40px !important;
+  height: 40px !important;
+}

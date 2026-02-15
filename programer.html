@@ -21,6 +21,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="stylesheet" href="/public/css/senior-polish.css">
 </head>
 
 <body>
@@ -57,8 +58,8 @@
 
         <!-- Social Links -->
         <div class="d-flex ms-lg-3">
-          <a href="https://www.linkedin.com/in/jose-andres-acu%C3%B1a-rodriguez" class="nav-link px-2" target="_blank"
-            rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/joseacuna-cyberdev" class="nav-link px-2" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://github.com/JoseAndres20" class="nav-link px-2" target="_blank" rel="noopener"
@@ -83,9 +84,6 @@
           <h1 class="hero-title">
             <span class="highlight">Desarrollador Full Stack</span>
           </h1>
-          <p class="hero-subtitle">
-            Diseño y despliego arquitecturas web completas, desde la interfaz de usuario hasta servicios Backend robustos, enfocando la entrega en calidad, rendimiento y seguridad (OWASP).
-          </p>
           <div class="hero-cta mt-4">
             <a href="#projects" class="btn btn-primary me-2">
               <i class="fas fa-code"></i> Ver Proyectos
@@ -98,7 +96,7 @@
 
         <!-- Imagen o Ilustración -->
         <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="1000">
-          <img src="/public/img/me.png"
+          <img src="/public/img/jose1.png"
             alt="Portrait of Jose Andres Acuña Rodríguez, a full stack developer, smiling confidently in a professional setting with a blurred background suggesting a modern workspace"
             class="img-fluid hero-img">
         </div>
@@ -109,7 +107,7 @@
   <!-- Lightbox hero -->
   <div class="lightbox" id="heroLightbox" aria-hidden="true">
     <div class="lightbox-backdrop"></div>
-    <img src="/public/img/image.png" alt="Foto ampliada de Jose Andres" class="lightbox-img">
+    <img src="/public/img/jose1.png" alt="Foto ampliada de Jose Andres" class="lightbox-img">
     <button class="lightbox-close" aria-label="Cerrar">&times;</button>
   </div>
 
@@ -120,12 +118,18 @@
         <div class="col-lg-7" data-aos="fade-right">
           <h2 class="section-title">Sobre Mí</h2>
           <p class="section-subtitle">
-            Ingeniero en Tecnologías de la Información, apasionado por la tecnología
-            y por aprender algo nuevo cada día.
+            Ingeniero en Tecnologías de la Información, especializado en el diseño y despliegue de arquitecturas web
+            completas.
           </p>
           <p class="about-text">
-            Me encanta convertir ideas en productos digitales útiles, trabajar en equipo
-            y mantenerme al día con las tendencias para construir soluciones con impacto real.
+            Mi enfoque se centra en construir soluciones robustas que conectan interfaces de usuario intuitivas con
+            servicios Backend de alto rendimiento. Priorizo la <strong>calidad</strong>, el
+            <strong>rendimiento</strong> y la <strong>seguridad proactiva (OWASP Top 10)</strong> en cada fase del ciclo
+            de vida del software.
+          </p>
+          <p class="about-text">
+            Me apasiona convertir ideas en productos digitales escalables, trabajando con metodologías ágiles y
+            manteniéndome a la vanguardia de las tendencias tecnológicas para generar un impacto real en el negocio.
           </p>
 
           <div class="skills-grid">
@@ -167,8 +171,10 @@
   <section id="projects" class="projects section">
     <div class="projects-bg-video" aria-hidden="true">
       <video autoplay muted loop playsinline>
-        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov" type="video/quicktime">
-        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov" type="video/mp4">
+        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov"
+          type="video/quicktime">
+        <source src="/public/img/vecteezy_abstract-motion-digital-background-digital-data-tunnel_4827128.mov"
+          type="video/mp4">
         <!-- fallback -->
       </video>
     </div>
@@ -183,7 +189,81 @@
 
       <div class="projects-grid">
 
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="400">
+        <!-- 1. SaaS Barbershop -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-header project-header-saas">
+            <div id="barberCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                    <img src="/public/img/barber.png" class="img-fluid rounded shadow-lg carousel-img-contain"
+                      alt="Barbería SaaS Screenshot 1">
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                    <img src="/public/img/barberia2.png" class="img-fluid rounded shadow-lg carousel-img-contain"
+                      alt="Barbería SaaS Screenshot 2">
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <div class="d-flex align-items-center justify-content-center h-100 p-3">
+                    <img src="/public/img/barber3.png" class="img-fluid rounded shadow-lg carousel-img-contain"
+                      alt="Barbería SaaS Screenshot 3">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#barberCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#barberCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="project-overlay">
+              <h4 class="project-overlay-title">SaaS FULL STACK SOLUTION</h4>
+              <p>Next.js + React Query + Tailwind</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title d-flex align-items-center gap-2">
+              <i class="fas fa-cut text-primary"></i>
+              SaaS Gestión de Barberías
+            </h3>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3">
+                <i class="fas fa-users me-1"></i> 200+ Usuarios
+              </span>
+              <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3">
+                <i class="fas fa-store me-1"></i> 3 Barberías Activas
+              </span>
+            </div>
+            <p class="project-description">
+              Plataforma SaaS profesional con arquitectura desacoplada: Frontend, API y Base de Datos hospedados
+              independientemente.
+              Optimizado con <strong>React Query</strong> para manejo de estado, <strong>indexación de
+                consultas</strong> para alto rendimiento y
+              cacheado de endpoints críticos.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag react">Next.js</span>
+              <span class="tech-tag javascript">Tailwind</span>
+              <span class="tech-tag react">React Query</span>
+              <span class="tech-tag postgresql">Supabase</span>
+              <span class="tech-tag">API Rest</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn btn-outline disabled w-100">
+                <i class="fas fa-lock"></i> Proyecto Privado / En Crecimiento
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. MediVault (Security) -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
           <div class="project-header api">
             <img src="/public/img/medivault.png" alt="MediVault screenshot" class="project-thumb">
             <div class="project-overlay">
@@ -215,7 +295,8 @@
             </div>
 
             <div class="project-actions two-btns">
-              <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-primary" target="_blank" rel="noopener">
+              <a href="https://github.com/JoseAndres20/MediVault" class="btn btn-primary" target="_blank"
+                rel="noopener">
                 <i class="fab fa-github"></i>
                 Ver en GitHub
               </a>
@@ -229,70 +310,7 @@
           </div>
         </article>
 
-        <!-- Following Cars -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="project-header database">
-            <img src="/public/img/car2.png" alt="Following Cars screenshot" class="project-thumb">
-            <div class="project-overlay">
-              <h4 class="project-overlay-title">DATABASE MANAGEMENT</h4>
-              <p>SQL & NoSQL Integration</p>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Following Cars</h3>
-            <p class="project-description">
-              Aplicación tipo Uber donde se gestionan órdenes y tramas que
-              se visualizan en un mapa en tiempo real.
-              Proyecto orientado a practicar bases de datos SQL y NoSQL,
-              integrando Docker Compose y un frontend en React.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag react">React</span>
-              <span class="tech-tag javascript">JavaScript</span>
-              <span class="tech-tag postgresql">PostgreSQL</span>
-              <span class="tech-tag mongodb">MongoDB</span>
-              <span class="tech-tag docker">Docker</span>
-            </div>
-            <a href="https://github.com/JoseAndres20/Following_Cars" class="btn btn-primary" target="_blank"
-              rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a>
-          </div>
-        </article>
-
-        <!-- Gestión de Viáticos -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
-          <div class="project-header mobile">
-            <img src="/public/img/flutter1.png" alt="Gestión de Viáticos app" class="project-thumb">
-            <div class="project-overlay">
-              <h4 class="project-overlay-title">MOBILE DEVELOPMENT</h4>
-              <p>Flutter & .NET API</p>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Gestión de Viáticos</h3>
-            <p class="project-description">
-              Aplicación móvil desarrollada en Flutter/Dart con backend en
-              C# (.NET API).
-              Permite a usuarios registrar viáticos y a administradores
-              aprobar o rechazar solicitudes,
-              integrando frontend y backend en una solución completa.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag dart">Dart</span>
-              <span class="tech-tag csharp">C#</span>
-              <span class="tech-tag flutter">Flutter</span>
-              <span class="tech-tag">NET API</span>
-            </div>
-            <a href="https://github.com/JoseAndres20/movil_2" class="btn btn-primary" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a>
-          </div>
-        </article>
-
-        <!-- FutCamp -->
+        <!-- 3. FutCamp (Next.js) -->
         <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="project-header web">
             <img src="/public/img/futcam.png" alt="FutCamp panel" class="project-thumb">
@@ -324,44 +342,8 @@
           </div>
         </article>
 
-        <!-- News Frontend -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="project-header web">
-            <img src="/public/img/dajoma.png" alt="DAJOMA News frontend" class="project-thumb">
-            <div class="project-overlay">
-              <h4 class="project-overlay-title">DAJOMA_NEWS FRONTEND</h4>
-              <p>Next.js + TypeScript + Tailwind</p>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">News Frontend Dashboard</h3>
-            <p class="project-description">
-              Frontend moderno desarrollado con Next.js, TypeScript y Tailwind CSS
-              que consume la API de noticias scrapeadas. Ofrece una interfaz intuitiva
-              para visualizaR.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag react">React</span>
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag typescript">TypeScript</span>
-              <span class="tech-tag">Tailwind CSS</span>
-              <span class="tech-tag supabase">Supabase</span>
-            </div>
-            <a href="https://github.com/JoseAndres20/dajoma-news-frontend" class="btn btn-primary" target="_blank"
-              rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a><br>
-            <a href="https://dajoma-news-frontend.vercel.app/" class="btn btn-secondary btn-view" target="_blank"
-              rel="noopener">
-              <i class="fas fa-external-link-alt"></i>
-              Ver Demo
-            </a>
-          </div>
-        </article>
-
-        <!-- News Scraper API -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="50">
+        <!-- 4. News Scraper API -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="400">
           <div class="project-header api">
             <img src="/public/img/py.webp" alt="News Scraper API" class="project-thumb">
             <div class="project-overlay">
@@ -392,29 +374,30 @@
           </div>
         </article>
 
-        <!-- Sistema de Votaciones -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-header voting">
-            <img src="/public/img/fondo1.webp" alt="Sistema de votaciones" class="project-thumb">
+        <!-- 5. News Frontend -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="project-header web">
+            <img src="/public/img/dajoma.png" alt="DAJOMA News frontend" class="project-thumb">
             <div class="project-overlay">
-              <h4 class="project-overlay-title">VOTING SYSTEM</h4>
-              <p>Java Desktop Application</p>
+              <h4 class="project-overlay-title">DAJOMA_NEWS FRONTEND</h4>
+              <p>Next.js + TypeScript + Tailwind</p>
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">Sistema de Votaciones</h3>
+            <h3 class="project-title">News Frontend Dashboard</h3>
             <p class="project-description">
-              Proyecto desarrollado en Java (NetBeans) que simula un sistema
-              de votaciones para elección de candidatos.
-              Incluye gestión de administradores, usuarios y candidatos,
-              permitiendo registrar, votar y administrar elecciones de forma
-              digital.
+              Frontend moderno desarrollado con Next.js, TypeScript y Tailwind CSS
+              que consume la API de noticias scrapeadas. Ofrece una interfaz intuitiva
+              para visualizar.
             </p>
             <div class="tech-stack">
-              <span class="tech-tag java">Java</span>
-              <span class="tech-tag">NetBeans</span>
+              <span class="tech-tag react">React</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag typescript">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag supabase">Supabase</span>
             </div>
-            <a href="https://github.com/JoseAndres20/ProjectExpUser" class="btn btn-primary" target="_blank"
+            <a href="https://github.com/JoseAndres20/dajoma-news-frontend" class="btn btn-primary" target="_blank"
               rel="noopener">
               <i class="fab fa-github"></i>
               Ver en GitHub
@@ -422,8 +405,71 @@
           </div>
         </article>
 
-        <!-- Mariano Juvenil -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="800">
+        <!-- 6. Following Cars -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-header database">
+            <img src="/public/img/car2.png" alt="Following Cars screenshot" class="project-thumb">
+            <div class="project-overlay">
+              <h4 class="project-overlay-title">DATABASE MANAGEMENT</h4>
+              <p>SQL & NoSQL Integration</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Following Cars</h3>
+            <p class="project-description">
+              Aplicación tipo Uber donde se gestionan órdenes y tramas que
+              se visualizan en un mapa en tiempo real.
+              Proyecto orientado a practicar bases de datos SQL y NoSQL,
+              integrando Docker Compose y un frontend en React.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag react">React</span>
+              <span class="tech-tag javascript">JavaScript</span>
+              <span class="tech-tag postgresql">PostgreSQL</span>
+              <span class="tech-tag mongodb">MongoDB</span>
+              <span class="tech-tag docker">Docker</span>
+            </div>
+            <a href="https://github.com/JoseAndres20/Following_Cars" class="btn btn-primary" target="_blank"
+              rel="noopener">
+              <i class="fab fa-github"></i>
+              Ver en GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- 7. Gestión de Viáticos -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-header mobile">
+            <img src="/public/img/flutter1.png" alt="Gestión de Viáticos app" class="project-thumb">
+            <div class="project-overlay">
+              <h4 class="project-overlay-title">MOBILE DEVELOPMENT</h4>
+              <p>Flutter & .NET API</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Gestión de Viáticos</h3>
+            <p class="project-description">
+              Aplicación móvil desarrollada en Flutter/Dart con backend en
+              C# (.NET API).
+              Permite a usuarios registrar viáticos y a administradores
+              aprobar o rechazar solicitudes,
+              integrando frontend y backend en una solución completa.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag dart">Dart</span>
+              <span class="tech-tag csharp">C#</span>
+              <span class="tech-tag flutter">Flutter</span>
+              <span class="tech-tag">NET API</span>
+            </div>
+            <a href="https://github.com/JoseAndres20/movil_2" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              Ver en GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- 8. Mariano Juvenil -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="project-header web">
             <img src="/public/img/mariano.png" alt="Mariano Juvenil sistema" class="project-thumb">
             <div class="project-overlay">
@@ -454,66 +500,6 @@
           </div>
         </article>
 
-        <!-- Web Store Game -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="500">
-          <div class="project-header web">
-            <img src="/public/img/gamer.jpg" alt="Web Store Game" class="project-thumb">
-            <div class="project-overlay">
-              <h4 class="project-overlay-title">E-COMMERCE</h4>
-              <p>Gaming Store</p>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Web Store Game</h3>
-            <p class="project-description">
-              Desarrollo de tienda online para ventas de productos gamer con
-              funcionalidades completas
-              de carrito de compras, gestión de productos y procesamiento de
-              pagos.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag php">PHP</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag javascript">JavaScript</span>
-            </div>
-            <a href="https://github.com/243545656765jose/Project_Web_Store_game" class="btn btn-primary" target="_blank"
-              rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a>
-          </div>
-        </article>
-
-        <!-- API de Noticias -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="600">
-          <div class="project-header news">
-            <img src="/public/img/n.jpg" alt="API de Noticias" class="project-thumb">
-            <div class="project-overlay">
-              <h4 class="project-overlay-title">NEWS API</h4>
-              <p>Content Management</p>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">API de Noticias</h3>
-            <p class="project-description">
-              Sistema de gestión de noticias publicadas con funcionalidades
-              completas de
-              administración de contenido, categorización y publicación
-              automática.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag">EJS</span>
-              <span class="tech-tag javascript">JavaScript</span>
-              <span class="tech-tag">CSS</span>
-            </div>
-            <a href="https://github.com/243545656765jose/News-Shop-" class="btn btn-primary" target="_blank"
-              rel="noopener">
-              <i class="fab fa-github"></i>
-              Ver en GitHub
-            </a>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
@@ -524,98 +510,98 @@
       <div class="text-center mb-5">
         <h2 class="section-title" data-aos="fade-up">Tecnologías Usadas</h2>
         <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-          Herramientas y lenguajes con los que e trabajado en mis proyectos
+          Herramientas y lenguajes con los que he trabajado en mis proyectos
         </p>
       </div>
 
       <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
         <div class="tech-item">
-          <i class="fab fa-js-square tech-item-icon" style="color: #f7df1e;"></i>
+          <i class="fab fa-js-square tech-item-icon icon-js"></i>
           <div class="tech-item-name">JavaScript</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-react tech-item-icon" style="color: #61dafb;"></i>
+          <i class="fab fa-react tech-item-icon icon-react"></i>
           <div class="tech-item-name">React</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-vuejs tech-item-icon" style="color: #4fc08d;"></i>
+          <i class="fab fa-vuejs tech-item-icon icon-vue"></i>
           <div class="tech-item-name">Vue.js</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-laravel tech-item-icon" style="color: #ff2d20;"></i>
+          <i class="fab fa-laravel tech-item-icon icon-laravel"></i>
           <div class="tech-item-name">Laravel</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-php tech-item-icon" style="color: #777bb4;"></i>
+          <i class="fab fa-php tech-item-icon icon-php"></i>
           <div class="tech-item-name">PHP</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-java tech-item-icon" style="color: #ed8b00;"></i>
+          <i class="fab fa-java tech-item-icon icon-java"></i>
           <div class="tech-item-name">Java</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-python tech-item-icon" style="color: #3776ab;"></i>
+          <i class="fab fa-python tech-item-icon icon-python"></i>
           <div class="tech-item-name">Python</div>
         </div>
         <div class="tech-item">
-          <i class="fas fa-mobile-alt tech-item-icon" style="color: #02569b;"></i>
+          <i class="fas fa-mobile-alt tech-item-icon icon-flutter"></i>
           <div class="tech-item-name">Flutter</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-bootstrap tech-item-icon" style="color: #7952b3;"></i>
+          <i class="fab fa-bootstrap tech-item-icon icon-bootstrap"></i>
           <div class="tech-item-name">Bootstrap</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-node-js tech-item-icon" style="color: #68a063;"></i>
+          <i class="fab fa-node-js tech-item-icon icon-nodejs"></i>
           <div class="tech-item-name">Node.js</div>
         </div>
         <div class="tech-item">
-          <i class="fas fa-database tech-item-icon" style="color: #4479a1;"></i>
+          <i class="fas fa-database tech-item-icon icon-mysql"></i>
           <div class="tech-item-name">MySQL</div>
         </div>
         <div class="tech-item">
-          <i class="fas fa-database tech-item-icon" style="color: #336791;"></i>
+          <i class="fas fa-database tech-item-icon icon-postgresql"></i>
           <div class="tech-item-name">PostgreSQL</div>
         </div>
         <div class="tech-item">
-          <i class="fas fa-leaf tech-item-icon" style="color: #47a248;"></i>
+          <i class="fas fa-leaf tech-item-icon icon-mongodb"></i>
           <div class="tech-item-name">MongoDB</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-docker tech-item-icon" style="color: #2496ed;"></i>
+          <i class="fab fa-docker tech-item-icon icon-docker"></i>
           <div class="tech-item-name">Docker</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-git-alt tech-item-icon" style="color: #f05032;"></i>
+          <i class="fab fa-git-alt tech-item-icon icon-git"></i>
           <div class="tech-item-name">Git</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-html5 tech-item-icon" style="color: #e34f26;"></i>
+          <i class="fab fa-html5 tech-item-icon icon-html5"></i>
           <div class="tech-item-name">HTML5</div>
         </div>
         <div class="tech-item">
-          <i class="fab fa-css3-alt tech-item-icon" style="color: #1572b6;"></i>
+          <i class="fab fa-css3-alt tech-item-icon icon-css3"></i>
           <div class="tech-item-name">CSS3</div>
         </div>
         <div class="tech-item">
-          <i class="fas fa-code tech-item-icon" style="color: #7f52ff;"></i>
+          <i class="fas fa-code tech-item-icon icon-kotlin"></i>
           <div class="tech-item-name">Kotlin</div>
         </div>
         <div class="tech-item">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
-            class="tech-item-icon" style="width:40px; height:40px;">
+            class="tech-item-icon icon-size-md">
           <div class="tech-item-name">Next.js</div>
         </div>
 
         <div class="tech-item">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            alt="TypeScript" class="tech-item-icon" style="width:40px; height:40px;">
+            alt="TypeScript" class="tech-item-icon icon-size-md">
           <div class="tech-item-name">TypeScript</div>
         </div>
 
         <div class="tech-item">
           <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/supabase.svg"
-            alt="Supabase" class="tech-item-icon" style="width:40px; height:40px;">
+            alt="Supabase" class="tech-item-icon icon-size-md">
           <div class="tech-item-name">Supabase</div>
         </div>
 
@@ -634,8 +620,8 @@
         </div>
         <div class="col-md-6">
           <div class="social-links justify-content-md-end">
-            <a href="https://www.linkedin.com/in/jose-andres-acu%C3%B1a-rodriguez" class="social-link" target="_blank"
-              rel="noopener" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/joseacuna-cyberdev" class="social-link" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
               <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/JoseAndres20" class="social-link" target="_blank" rel="noopener"
