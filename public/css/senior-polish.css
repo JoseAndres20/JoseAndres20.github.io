@@ -13,27 +13,107 @@
 }
 
 /* Tech Icon Colors */
-.icon-js { color: #f7df1e; }
-.icon-react { color: #61dafb; }
-.icon-vue { color: #4fc08d; }
-.icon-laravel { color: #ff2d20; }
-.icon-php { color: #777bb4; }
-.icon-java { color: #ed8b00; }
-.icon-python { color: #3776ab; }
-.icon-flutter { color: #02569b; }
-.icon-bootstrap { color: #7952b3; }
-.icon-nodejs { color: #68a063; }
-.icon-mysql { color: #4479a1; }
-.icon-postgresql { color: #336791; }
-.icon-mongodb { color: #47a248; }
-.icon-docker { color: #2496ed; }
-.icon-git { color: #f05032; }
-.icon-html5 { color: #e34f26; }
-.icon-css3 { color: #1572b6; }
-.icon-kotlin { color: #7f52ff; }
+.icon-js {
+  color: #f7df1e;
+}
+
+.icon-react {
+  color: #61dafb;
+}
+
+.icon-vue {
+  color: #4fc08d;
+}
+
+.icon-laravel {
+  color: #ff2d20;
+}
+
+.icon-php {
+  color: #777bb4;
+}
+
+.icon-java {
+  color: #ed8b00;
+}
+
+.icon-python {
+  color: #3776ab;
+}
+
+.icon-flutter {
+  color: #02569b;
+}
+
+.icon-bootstrap {
+  color: #7952b3;
+}
+
+.icon-nodejs {
+  color: #68a063;
+}
+
+.icon-mysql {
+  color: #4479a1;
+}
+
+.icon-postgresql {
+  color: #336791;
+}
+
+.icon-mongodb {
+  color: #47a248;
+}
+
+.icon-docker {
+  color: #2496ed;
+}
+
+.icon-git {
+  color: #f05032;
+}
+
+.icon-html5 {
+  color: #e34f26;
+}
+
+.icon-css3 {
+  color: #1572b6;
+}
+
+.icon-kotlin {
+  color: #7f52ff;
+}
 
 /* Fixed size icons */
 .icon-size-md {
   width: 40px !important;
   height: 40px !important;
+}
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  background: rgba(255, 215, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: #ffd700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.featured-badge i {
+  font-size: 0.9rem;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
 }
