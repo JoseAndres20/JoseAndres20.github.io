@@ -2,7 +2,7 @@
 /* Refactored from inline styles for better maintainability */
 
 .project-header-saas {
-  height: 280px;
+  height: 220px;
   background: linear-gradient(145deg, #1a1c24, #12141d);
 }
 
