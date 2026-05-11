@@ -56,7 +56,21 @@ window.addEventListener("load", updateActiveLink);
 window.addEventListener("resize", updateActiveLink);
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => setActiveLink(link.getAttribute("href")));
+  link.addEventListener("click", () => {
+    setActiveLink(link.getAttribute("href"));
+    
+    // Close mobile menu if open
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      } else {
+        // Fallback for older bootstrap versions or if instance is not found
+        navbarCollapse.classList.remove('show');
+      }
+    }
+  });
 });
 
 // Progress bars

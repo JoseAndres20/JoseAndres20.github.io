@@ -189,7 +189,7 @@
       <div class="projects-grid">
 
         <!-- 1. SaaS Barbershop -->
-        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="50">
           <div class="project-header project-header-saas">
             <div class="featured-badge">
               <i class="fas fa-star"></i> Proyectos Destacados
@@ -261,6 +261,40 @@
                 <i class="fas fa-lock"></i> Proyecto Privado / En Crecimiento
               </div>
             </div>
+          </div>
+        </article>
+
+        <!-- 0. NetPulse (Full Stack & Security) -->
+        <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-header web">
+            <img src="/public/img/netpulse_card.png" alt="NetPulse Dashboard" class="project-thumb">
+            <div class="project-overlay">
+              <h4 class="project-overlay-title">FULL STACK & CYBERSECURITY</h4>
+              <p>Python (FastAPI) + Next.js + Docker + ReactFlow</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title d-flex align-items-center gap-2">
+              <i class="fas fa-network-wired text-primary"></i>
+              NetPulse – Plataforma de Auditoría de Red
+            </h3>
+            <p class="project-description">
+              Solución de ciberseguridad defensiva basada en <strong>microservicios políglotas</strong>. 
+              Implementa un motor de escaneo táctico con Python y una UI interactiva con <strong>ReactFlow</strong> para visualización de topologías. 
+              Utiliza <strong>SSE (Server-Sent Events)</strong> para streaming de datos en tiempo real y detección de dispositivos no autorizados.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag python">Python (FastAPI)</span>
+              <span class="tech-tag react">Next.js</span>
+              <span class="tech-tag typescript">TypeScript</span>
+              <span class="tech-tag postgresql">PostgreSQL</span>
+              <span class="tech-tag docker">Docker</span>
+              <span class="tech-tag">ReactFlow</span>
+            </div>
+            <a href="https://github.com/JoseAndres20/NetPulse" class="btn btn-primary" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              Ver en GitHub
+            </a>
           </div>
         </article>
 
@@ -613,6 +647,14 @@
               <div class="tech-item-name">Docker</div>
             </div>
             <div class="tech-item">
+              <i class="fas fa-file-code tech-item-icon" style="color: #636e72;"></i>
+              <div class="tech-item-name">Makefile</div>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-markdown tech-item-icon" style="color: #0984e3;"></i>
+              <div class="tech-item-name">Markdown</div>
+            </div>
+            <div class="tech-item">
               <i class="fab fa-git-alt tech-item-icon icon-git"></i>
               <div class="tech-item-name">Git</div>
             </div>
@@ -739,6 +781,17 @@
             top: offsetPosition,
             behavior: 'smooth'
           });
+
+          // Close mobile menu if open
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+              bsCollapse.hide();
+            } else {
+              navbarCollapse.classList.remove('show');
+            }
+          }
         }
       });
     });

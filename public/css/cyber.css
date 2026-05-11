@@ -508,11 +508,63 @@ footer {
 }
 
 @media (max-width: 991px) {
-  .hero { text-align: center; }
-  .photo-wrapper { width: 280px; }
+  .hero { 
+    text-align: center; 
+    padding-top: 100px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .photo-wrapper { 
+    width: 280px; 
+    margin-top: 2rem;
+  }
+  .navbar-collapse {
+    background: rgba(7, 12, 24, 0.98);
+    margin: 0 -1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .section-card {
+    padding: 1.5rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .tools-grid {
+    gap: 0.5rem;
+  }
+  .tool-card {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 576px) {
-  .photo-wrapper { width: 240px; }
-  .cert-grid { grid-template-columns: 1fr; }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .photo-wrapper { 
+    width: 220px; 
+  }
+  .cert-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .tech-badge {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .section-title {
+    font-size: 0.65rem;
+  }
 }
