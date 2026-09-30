@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="60%" stop-color="#132a5c"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <!-- topology line -->
+  <line x1="200" y1="290" x2="400" y2="220" stroke="#60a5fa" stroke-width="2" stroke-dasharray="8 6" opacity="0.8"/>
+  <line x1="600" y1="290" x2="400" y2="220" stroke="#60a5fa" stroke-width="2" stroke-dasharray="8 6" opacity="0.8"/>
+  <!-- DC node -->
+  <g>
+    <rect x="330" y="140" width="140" height="90" rx="12" fill="#0e1420" stroke="#60a5fa" stroke-width="2"/>
+    <text x="400" y="176" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28">🖥️</text>
+    <text x="400" y="200" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff">DC-SERVER</text>
+    <text x="400" y="217" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#93c5fd">192.168.56.10 • infra.local</text>
+  </g>
+  <!-- client left -->
+  <g>
+    <rect x="120" y="270" width="160" height="80" rx="12" fill="#0e1420" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="200" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22">💻</text>
+    <text x="200" y="322" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff">WIN-CLIENT</text>
+    <text x="200" y="338" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#93c5fd">192.168.56.11</text>
+  </g>
+  <!-- AD right -->
+  <g>
+    <rect x="520" y="270" width="160" height="80" rx="12" fill="#0e1420" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="600" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22">🛡️</text>
+    <text x="600" y="322" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff">AD • GPO • DNS</text>
+    <text x="600" y="338" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#93c5fd">OUs + Usuarios</text>
+  </g>
+  <!-- header -->
+  <text x="40" y="60" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">INFRA-LEARNING</text>
+  <text x="40" y="86" font-family="Inter, Arial, sans-serif" font-size="14" fill="#93c5fd">Active Directory Lab • Vagrant • Windows Server 2022</text>
+  <rect x="40" y="100" width="120" height="26" rx="13" fill="#2563eb"/>
+  <text x="100" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">vagrant up</text>
+</svg>

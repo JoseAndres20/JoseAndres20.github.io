@@ -327,7 +327,7 @@ body::before {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url('/public/img/image\ copy\ 2.png') center/cover fixed;
+  background: url('/public/img/jose1.jpeg') center/cover fixed;
   overflow: hidden;
 }
 
@@ -504,7 +504,7 @@ body::before {
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
-  background: var(--bg-primary) url('/public/img/image\ copy\ 2.png') center/cover fixed;
+  background: var(--bg-primary) url('/public/img/jose1.jpeg') center/cover fixed;
   position: relative;
   overflow: hidden;
 }

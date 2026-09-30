@@ -136,6 +136,96 @@ if (!prefersReducedMotion && hasFinePointer && parallaxTargets.length) {
   });
 }
 
+// Certifications carousel: infinite marquee (rightward loop) + prev/next + pause
+const certCarousel = document.getElementById("certCarousel");
+const certPrev = document.getElementById("certPrev");
+const certNext = document.getElementById("certNext");
+const certPlayPause = document.getElementById("certPlayPause");
+
+if (certCarousel && certPrev && certNext && certPlayPause) {
+  const playIcon = "fas fa-play";
+  const pauseIcon = "fas fa-pause";
+  const icon = certPlayPause.querySelector("i");
+  const SPEED_PX_S = 45;
+  let playing = !prefersReducedMotion;
+  let hovering = false;
+  let programmatic = false;
+
+  // Duplicate cards once for a seamless infinite loop
+  Array.from(certCarousel.children).forEach((card) => {
+    const clone = card.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.removeAttribute("data-animate");
+    certCarousel.appendChild(clone);
+  });
+
+  const halfWidth = () => certCarousel.scrollWidth / 2;
+  const norm = (value) => {
+    const width = halfWidth();
+    if (!width) return 0;
+    return ((value % width) + width) % width;
+  };
+  let pos = 0;
+  certCarousel.scrollLeft = 0;
+
+  const cardStep = () => {
+    const card = certCarousel.querySelector(".cert-card");
+    return card ? card.getBoundingClientRect().width + 24 : 380;
+  };
+
+  const goNext = () => {
+    pos = norm(pos + cardStep());
+    programmatic = true;
+    certCarousel.scrollLeft = pos;
+  };
+
+  const goPrev = () => {
+    pos = norm(pos - cardStep());
+    programmatic = true;
+    certCarousel.scrollLeft = pos;
+  };
+
+  const setPlaying = (value) => {
+    playing = value;
+    if (icon) icon.className = playing ? pauseIcon : playIcon;
+    certPlayPause.setAttribute("aria-label", playing ? "Pausar carrusel de certificaciones" : "Reanudar carrusel de certificaciones");
+  };
+
+  // Adopt manual drags so the loop resumes from where the user left it
+  certCarousel.addEventListener("scroll", () => {
+    if (programmatic) {
+      programmatic = false;
+      return;
+    }
+    pos = norm(certCarousel.scrollLeft);
+  });
+
+  certNext.addEventListener("click", goNext);
+  certPrev.addEventListener("click", goPrev);
+  certPlayPause.addEventListener("click", () => setPlaying(!playing));
+
+  certCarousel.addEventListener("pointerenter", () => { hovering = true; });
+  certCarousel.addEventListener("pointerleave", () => { hovering = false; });
+  certCarousel.addEventListener("focusin", () => { hovering = true; });
+  certCarousel.addEventListener("focusout", () => { hovering = false; });
+
+  setPlaying(playing);
+
+  // Continuous motion: cards travel left -> right, wrapping seamlessly
+  let lastTime = performance.now();
+  const tick = (now) => {
+    const delta = Math.min((now - lastTime) / 1000, 0.1);
+    lastTime = now;
+    if (playing && !hovering && !document.hidden && halfWidth() > 0) {
+      pos = norm(pos - SPEED_PX_S * delta);
+      programmatic = true;
+      certCarousel.scrollLeft = pos;
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
 // Tilt effect for cards
 const tiltCards = document.querySelectorAll("[data-tilt]");
 if (!prefersReducedMotion && hasFinePointer && tiltCards.length) {

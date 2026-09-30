@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="55%" stop-color="#1a1040"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <pattern id="grid2" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#a78bfa" stroke-opacity="0.14" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <rect width="800" height="450" fill="url(#grid2)"/>
+  <text x="40" y="60" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">R3DJH0N_LEARNING</text>
+  <text x="40" y="86" font-family="Inter, Arial, sans-serif" font-size="14" fill="#c4b5fd">Cuaderno CTF • Labs • Tools • Obsidian</text>
+  <!-- folders -->
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="40" y="130" width="220" height="110" rx="12" fill="#0e1420" stroke="#a78bfa" stroke-width="1.6"/>
+    <text x="60" y="162" font-size="24">🚩</text>
+    <text x="60" y="186" font-size="14" font-weight="bold" fill="#fff">ctf/ + labs/</text>
+    <text x="60" y="206" font-size="11" fill="#c4b5fd">Fluid • Web • Forense</text>
+    <text x="60" y="222" font-size="11" fill="#c4b5fd">TryHackMe • HackTheBox</text>
+    <rect x="290" y="130" width="220" height="110" rx="12" fill="#0e1420" stroke="#60a5fa" stroke-width="1.6"/>
+    <text x="310" y="162" font-size="24">🛠️</text>
+    <text x="310" y="186" font-size="14" font-weight="bold" fill="#fff">tools/</text>
+    <text x="310" y="206" font-size="11" fill="#93c5fd">nmap • gobuster • hydra</text>
+    <text x="310" y="222" font-size="11" fill="#93c5fd">burp • sql • xss • john</text>
+    <rect x="540" y="130" width="220" height="110" rx="12" fill="#0e1420" stroke="#34d399" stroke-width="1.6"/>
+    <text x="560" y="162" font-size="24">📝</text>
+    <text x="560" y="186" font-size="14" font-weight="bold" fill="#fff">notes + scripts</text>
+    <text x="560" y="206" font-size="11" fill="#a7f3d0">markdown • obsidian</text>
+    <text x="560" y="222" font-size="11" fill="#a7f3d0">web • crypto • misc</text>
+  </g>
+  <!-- terminal bar -->
+  <g>
+    <rect x="40" y="270" width="720" height="130" rx="12" fill="#050912" stroke="#ffffff" stroke-opacity="0.15"/>
+    <circle cx="65" cy="292" r="6" fill="#f87171"/>
+    <circle cx="85" cy="292" r="6" fill="#fbbf24"/>
+    <circle cx="105" cy="292" r="6" fill="#34d399"/>
+    <text x="60" y="322" font-family="monospace" font-size="14" fill="#34d399">$ nmap -sV target.htb</text>
+    <text x="60" y="344" font-family="monospace" font-size="14" fill="#93c5fd">$ gobuster dir -u http://web/ -w wordlist</text>
+    <text x="60" y="366" font-family="monospace" font-size="14" fill="#c4b5fd">$ hydra -l admin -P rockyou ssh://ctf</text>
+  </g>
+</svg>
